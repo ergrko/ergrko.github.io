@@ -33,6 +33,7 @@ p{
     margin: 10mm;
     max-width: 900px;
     background-color: rgb(0, 0, 0);
+    border-style: groove;
     border-radius: 10px;
 }
 
@@ -49,4 +50,3 @@ p{
     border-color: rgb(0, 0, 0);
        
 }
- 
