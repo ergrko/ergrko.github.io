@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Document</title>
+    <title>Eric's Portfolio Project</title>
 
     <!-- Link to my style sheet -->
     <link rel="stylesheet" href="index2.css">
@@ -25,23 +25,28 @@
 <body>
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div class="myWeek1">
-        <h1>First Data Science Project by Eric Grant Kocharyan</h1>
+        <h1> Eric Grant Kocharyan - Data Science (2022/23)</h1>
         
-        <h3>Population Pyramid for the US in 2000</h3>
-        <p>The first chart illustrates the distribution of the US population by age group and sex.</p>
+        <h3>Week 1</h3> 
+        <p> The first task was to embed 2 automated and interactive charts onto my personal webpage.</p>
+        <h3>Inflation in the United States of America</h3>
+        <p>The first chart displays the year-on-year inflation level for the US (1963-2022)</p>
         <div class="chart" id="Chart1"></div>
 
-        <h3>Mean IMDB ratings by movie genre</h3>
-        <p>My second chart tracks the average scores of each movie sub-genre, enlisted by IMDB users (out of 10).</p>
+        <h3>The link between Firearm Deaths and Income in the US</h3>
+        <p>The second chart illustrates the relationship between gun-related deaths and median income (by state and region).</p>
         <div class="chart" id="Chart2"> </div>
+
+        <h3>Week 2</h3>
+        <p> The second task was to build two live charts and embed them into my webpage. The first chart was run directly through an API, and the second chart was run directly from my Github account.</p>
     </div> 
 </body>
 
 
 <script>
     //Define charts:
-    var myChart1 = "USpyramid.json";
-    var myChart2 = "imdbBarChart.json";
+    var myChart1 = "us_inflation.json";
+    var myChart2 = "us_gun_dths_inc.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
