@@ -39,6 +39,7 @@
 
         <h3>Week 2</h3>
         <p> The second task was to build two live charts and embed them into my webpage. The first chart was run directly through an API, and the second chart was run directly from my Github account.</p>
+        <div class="chart" id="Chart3"> </div>
     </div> 
 </body>
 
@@ -47,10 +48,12 @@
     //Define charts:
     var myChart1 = "us_inflation.json";
     var myChart2 = "us_gun_dths_inc.json";
+    var myChart3 = "imfLending1.json"
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
 </script>
 
 </html>
