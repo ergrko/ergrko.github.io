@@ -41,7 +41,7 @@
 
         <h1>Week 2</h1>
         <p> The second task was to build two live charts and embed them into my webpage. Both charts relate to IMF lending, with the second chart correcting for the failures of the first chart.</p>
-        <h3>IMF lending (in Nominal terms).</h3>
+        <h3>IMF lending (in Nominal terms)</h3>
         <p>The first chart shows the nominal value of IMF lending to all members been 1984-2022. However, in order to make our data more applicable, it needs to be transformed.</p>
         <div class="chart" id="Chart3"> </div>
 
@@ -53,6 +53,15 @@
         <p>------------------------------------------------------------------------------------</p>
 
         <h1>Week 3</h1>
+        <p> The third task was to use Python (Google Colab) to convert data from a .csv file into dictionary format, to make a chart.</p>
+        <h3>Evolution of Armenia's GDP</h3>
+        <p>This chart shows the trend of GDP per Capita in Armenia since gaining Independence from the Soviet Union (1991). Included data for 1990 for better comparison.</p>
+        <div class="chart" id="Chart5"> </div>
+        <p>------------------------------------------------------------------------------------</p>
+
+        <h1>Week 4</h1>
+        <p> The fourth task was to use a scraper in Python to extract data from a website, to make a chart.</p>
+
     </div> 
 </body>
 
@@ -63,12 +72,14 @@
     var myChart2 = "us_gun_dths_inc.json";
     var myChart3 = "imfLending1.json";
     var myChart4 = "imfLending2.json";
+    var myChart5 = "arm_gdpcap.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
 </script>
 
 </html>

@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "GDP per Capita of Armenia since Independence ",
+        "subtitle":"at Current US$, (1990-2021), Source: World Bank",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+        
+    "data": {
+      "values": [{"Year": "1990", "GDP per capita (current US$)": 637.8559212}, {"Year": "1991", "GDP per capita (current US$)": 590.5058756}, {"Year": "1992", "GDP per capita (current US$)": 369.7072323}, {"Year": "1993", "GDP per capita (current US$)": 357.2028486}, {"Year": "1994", "GDP per capita (current US$)": 400.5155938}, {"Year": "1995", "GDP per capita (current US$)": 456.3749333}, {"Year": "1996", "GDP per capita (current US$)": 504.0598426}, {"Year": "1997", "GDP per capita (current US$)": 523.2844107}, {"Year": "1998", "GDP per capita (current US$)": 609.1716537}, {"Year": "1999", "GDP per capita (current US$)": 597.4328988}, {"Year": "2000", "GDP per capita (current US$)": 622.7409229}, {"Year": "2001", "GDP per capita (current US$)": 694.4234554}, {"Year": "2002", "GDP per capita (current US$)": 783.241215}, {"Year": "2003", "GDP per capita (current US$)": 930.1254727}, {"Year": "2004", "GDP per capita (current US$)": 1191.921006}, {"Year": "2005", "GDP per capita (current US$)": 1643.756889}, {"Year": "2006", "GDP per capita (current US$)": 2158.148074}, {"Year": "2007", "GDP per capita (current US$)": 3139.28071}, {"Year": "2008", "GDP per capita (current US$)": 4010.861381}, {"Year": "2009", "GDP per capita (current US$)": 2994.340471}, {"Year": "2010", "GDP per capita (current US$)": 3218.378299}, {"Year": "2011", "GDP per capita (current US$)": 3525.807198}, {"Year": "2012", "GDP per capita (current US$)": 3681.844691}, {"Year": "2013", "GDP per capita (current US$)": 3838.17388}, {"Year": "2014", "GDP per capita (current US$)": 3986.231624}, {"Year": "2015", "GDP per capita (current US$)": 3607.289299}, {"Year": "2016", "GDP per capita (current US$)": 3591.828052}, {"Year": "2017", "GDP per capita (current US$)": 3914.527854}, {"Year": "2018", "GDP per capita (current US$)": 4220.540321}, {"Year": "2019", "GDP per capita (current US$)": 4604.646324}, {"Year": "2020", "GDP per capita (current US$)": 4266.018074}, {"Year": "2021", "GDP per capita (current US$)": 4670.008798}]
+    },
+    "height": 280,
+    "width": 375,
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal", "axis": {"title": null,"grid": false,"labelAngle": 45}},
+      "y": {"field": "GDP per capita (current US$)", "type": "quantitative", "axis": {"title": null}}
+    }
+  }
+  
