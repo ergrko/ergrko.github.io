@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+            "title": {
+            "text": "Average matchday attendances in the Premier League in 2021/22 ",
+            "subtitle":"in thousands, for all teams (including the league-wide average), Source: worldfootball.net",
+            "subtitleFontStyle":"italic",
+            "subtitleFontSize":10,
+            "anchor": "start",
+            "color": "black"},
+    "data": {
+      "values": [{"Team": "Manchester United", "Average Attendance": 72.992}, {"Team": "Arsenal FC", "Average Attendance": 59.776}, {"Team": "West Ham United", "Average Attendance": 57.915}, {"Team": "Tottenham Hotspur", "Average Attendance": 56.523}, {"Team": "Liverpool FC", "Average Attendance": 53.027}, {"Team": "Manchester City", "Average Attendance": 52.739}, {"Team": "Newcastle United", "Average Attendance": 51.487}, {"Team": "Aston Villa", "Average Attendance": 41.838}, {"Team": "Everton FC", "Average Attendance": 38.441}, {"Team": "Chelsea FC", "Average Attendance": 36.424}, {"Team": "Leeds United", "Average Attendance": 36.308}, {"Team": "Leicester City", "Average Attendance": 32.061}, {"Team": "Brighton & Hove Albion", "Average Attendance": 30.988}, {"Team": "Wolverhampton Wanderers", "Average Attendance": 30.725}, {"Team": "Southampton FC", "Average Attendance": 29.939}, {"Team": "Norwich City", "Average Attendance": 26.885}, {"Team": "Crystal Palace", "Average Attendance": 24.282}, {"Team": "Watford FC", "Average Attendance": 20.612}, {"Team": "Burnley FC", "Average Attendance": 19.189}, {"Team": "Brentford FC", "Average Attendance": 16.912}, {"Team": "overall", "Average Attendance": 39.453}]
+    },
+      "height": 375,
+    "width": 300,
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Average Attendance", "type": "quantitative", "axis": {"title":"Average Attendances ('000s)","labelAngle": 0}},
+      "y": {"field": "Team", "type": "nominal", "axis": {"title": null,"labelAngle": 0}}
+    }
+  }
+  

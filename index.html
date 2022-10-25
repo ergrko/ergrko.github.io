@@ -53,14 +53,28 @@
         <p>------------------------------------------------------------------------------------</p>
 
         <h1>Week 3</h1>
-        <p> The third task was to use Python (Google Colab) to convert data from a .csv file into dictionary format, to make a chart.</p>
-        <h3>Evolution of Armenia's GDP</h3>
-        <p>This chart shows the trend of GDP per Capita in Armenia since gaining Independence from the Soviet Union (1991). Included data for 1990 for better comparison.</p>
+        <p> The third task was to use Python (Google Colab) to convert data from a .csv file into dictionary format, to make a chart. Then, to create a second chart to improve on the visual endcoding.</p>
+        <h3>Evolution of 4 former Soviet-states' GDP</h3>
+        <p>This chart shows the trend of GDP per Capita in 4 former Soviet-states (Armenia, Azerbaijan, Georgia, Uzbekistan) since gaining Independence from the USSR (1991). Included data for 1990 for better comparison.</p>
         <div class="chart" id="Chart5"> </div>
+        <p>......................</p>
+        <div class="chart" id="Chart6"> </div>
+        <p>The visual encoding was changed from a bar chart to a line chart. This was done to make the differences in GDP per capita between countries much clearer.</p>
+
         <p>------------------------------------------------------------------------------------</p>
 
         <h1>Week 4</h1>
         <p> The fourth task was to use a scraper in Python to extract data from a website, to make a chart.</p>
+        <h3>Average Premier League attendances</h3>
+        <p>This chart shows each Premier League team's average matchday turnout during the 2021/22 season.</p>
+        <div class="chart" id="Chart7"> </div>
+        <p>The data was scraped from <a href="https://www.worldfootball.net/attendance/eng-premier-league-2021-2022/1/">https://www.worldfootball.net/attendance/eng-premier-league-2021-2022/1/</a>. </p>
+        <p>The website prevented me from directly scraping the data, therefore I had to find the table's element in the website's coding. Then, I copied the table's 'element' and created a seperate .html file on Visual Studio, which was then uploaded to Colab, for scraping and cleaning (click <a href="https://colab.research.google.com/drive/1jqs_GL70LK1kYEGhOMeik0WsnKU65gaU">here</a> for link to Colab Notebook). </p>
+        <p>I chose this site because the table was already in 'TIDY' long-form format. Therefore, it was already machine-readable and it clearly illustrated the data for the chart.</p>
+        <p>------------------------------------------------------------------------------------</p>
+
+        <h1>Week 5</h1>
+        <p>The fifth task was to use the ONS API to batch download nine different series as JSON files</p>
 
     </div> 
 </body>
@@ -72,7 +86,10 @@
     var myChart2 = "us_gun_dths_inc.json";
     var myChart3 = "imfLending1.json";
     var myChart4 = "imfLending2.json";
-    var myChart5 = "arm_gdpcap.json";
+    var myChart5 = "soviet_gdpcap.json";
+    var myChart6 = "soviet_gdpcap2.json";
+    var myChart7 = "prem_att.json";
+
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -80,6 +97,10 @@
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
     vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+
+
 </script>
 
 </html>
