@@ -90,7 +90,10 @@
         <p>-----------------------------------------------------------------------------------------------</p>
         <h1>Week 7</h1>
         <p>The seventh task was to produce two maps and embed them into my website.</p>
-
+        <div class="chart" id="Chart17"></div>
+        <p>This base map presents the World, with a clear outline for every country's borders. The map includes a country name tooltip. </p>
+        <div class="chart" id="Chart18"></div>
+        <p>This choropleth map illustrates the life expectancy (at birth) across the globe. It shows both the country name and life expectancy value in the tooltip.</p>
     </div> 
 </body>
 
@@ -113,6 +116,8 @@
     var myChart14 = "z_total_secondary.json";
     var myChart15 = "z_cap_acc_bal.json";
     var myChart16 = "z_f.a_balance.json";
+    var myChart17 = "worldmap_blank.json";
+    var myChart18 = "worldmap_life_exp.json";
 
 
     // Embed charts:
@@ -132,6 +137,8 @@
     vegaEmbed('#Chart14', myChart14);
     vegaEmbed('#Chart15', myChart15);
     vegaEmbed('#Chart16', myChart16);
+    vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
 
 
 </script>
