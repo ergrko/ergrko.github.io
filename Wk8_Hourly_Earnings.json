@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+  
+      "text": "Changes in Private Sector Hourly Earnings in the US and UK",
+  
+      "subtitle": [
+  
+        "Index; Year 2015=100. Seasonally Adjusted. Data covers June-2015 to July-2022.", "Source: OECD"
+  
+      ],
+  
+      "subtitleFontStyle": "italic",
+  
+      "subtitleFontSize": 12,
+  
+      "anchor": "start",
+  
+      "color": "black"
+  
+    },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/Hourly_Earnings_rule.csv",
+    "format": {"type": "csv"}
+  },
+
+  "height": 350,
+  "width": 480,
+  "autosize": {"type": "fit", "contains": "padding"},
+
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "x": {"field": "Month", "type": "temporal", "title": null},
+        "y": {
+          "field": "Index",
+          "type": "quantitative",
+          "axis": {"grid": false},
+          "scale": {"domain": [100, 135]},
+          "title": "Index Value"
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "scale": {"scheme": "set1"},
+          "title": null
+        },"tooltip": [
+      {"field": "Index", "type": "nominal", "title": "Index Value"}
+
+    ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#000000",
+        "size": 2,
+        "strokeDash": [4, 4]
+      },
+      "encoding": {
+        "x": {"field": "Lines", "type": "temporal"},
+        "title": {
+          "text": "Since Covid",
+          "orient": "right",
+          "anchor": "middle"
+        }
+      },
+      "data": {
+        "values": [
+          {"Lines": "2020-01-01"}
+        ],
+        "format": {"parse": {"Date": "utc:'%d %b %Y'"}}
+      }
+    }
+  ]
+}

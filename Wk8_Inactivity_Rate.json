@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Comparison of UK and US Inactivity rates",
+    "subtitle": [
+      "For all population aged 15-64. Data covers Q1-2016 to Q3-2022",
+      "Source: OECD"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/Inactivity_Rate_rule.csv",
+    "format": {"type": "csv"}
+  },
+
+  "height": 350,
+  "width": 480,
+  "autosize": {"type": "fit", "contains": "padding"},
+
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "x": {"field": "Quarter", "type": "temporal", "title": null},
+        "y": {
+          "field": "Inactivity Rate (%)",
+          "type": "quantitative",
+          "axis": {"grid": false},
+          "scale": {"domain": [18, 30]},
+          "title": "Inactivity Rate (%)"
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "scale": {"scheme": "set1"},
+          "title": null
+        },"tooltip": [
+      {"field": "Inactivity Rate (%)", "type": "nominal"}
+
+    ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#000000",
+        "size": 2,
+        "strokeDash": [4, 4]
+      },
+      "encoding": {
+        "x": {"field": "Lines", "type": "temporal"},
+        "title": {
+          "text": "Since Covid",
+          "orient": "right",
+          "anchor": "middle"
+        }
+      },
+      "data": {
+        "values": [
+          {"Lines": "2020-01-01"}
+        ],
+        "format": {"parse": {"Date": "utc:'%d %b %Y'"}}
+      }
+    }
+  ]
+}

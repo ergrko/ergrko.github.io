@@ -1,0 +1,31 @@
+
+  {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 700,
+    "height": 350,
+
+    "title": {
+        "text": "Map of the World",
+        "anchor": "start",
+        "color": "black"},
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/world.geo.json",
+      "format":{"property": "features"}},
+  
+          "projection":{
+              "type":"naturalEarth1"
+          },
+  
+          "mark":{
+              "type":"geoshape",
+              "fill":"lightblue",
+              "stroke": "darkgrey",
+              "strokeWidth": 1.2
+          },
+  
+          "encoding":{
+              "tooltip":{"field":"properties.name", "type": "nominal"}
+          }
+  }
