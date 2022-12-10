@@ -89,35 +89,53 @@
         </div> 
         <p>-----------------------------------------------------------------------------------------------</p>
         <h1>Week 7</h1>
-        <p>The seventh task was to produce two maps and embed them into my website.</p>
+        <p>The sixth task was to produce two maps and embed them into my website.</p>
         <div class="chart" id="Chart17"></div>
         <p>This base map presents the World, with a clear outline for every country's borders. The map includes a country name tooltip. </p>
         <div class="chart" id="Chart18"></div>
         <p>This choropleth map illustrates the life expectancy (at birth) across the globe. It shows both the country name and life expectancy value in the tooltip.</p>
+        <p>-----------------------------------------------------------------------------------------------</p>
+
+        <h1>Week 8</h1>
+        <p> The seventh task was to produce two charts that support/refute an argument made at the Festival of Economics.</p>
+        <p> Sarah Smith spoke about how long-term inactivity has risen since Covid, thus resulting in labour market tightness and wage increases. Vicky Pryce added that the UK and US faced similar situations.</p>
+        <div class="chart" id="Chart19"></div>
+        <p>......................</p>
+        <div class="chart" id="Chart20"></div>
+        <p>......................</p>
+        <p> From the first chart, inactivity rates in the UK have steadily risen since Covid. Despite initial steep rises, the US saw gradual declines in inactivity. Focusing on the private sector, both nations are seeing protracted increases in hourly earnings.</p>
+        <p>-----------------------------------------------------------------------------------------------</p>
+
+        <h1>Week 9</h1>
+        <p> The eighth task was to produce two charts that use advanced analytics.</p>
+
+
     </div> 
 </body>
 
 
 <script>
     //Define charts:
-    var myChart1 = "us_inflation.json";
-    var myChart2 = "us_gun_dths_inc.json";
-    var myChart3 = "imfLending1.json";
-    var myChart4 = "imfLending2.json";
-    var myChart5 = "soviet_gdpcap.json";
-    var myChart6 = "soviet_gdpcap2.json";
-    var myChart7 = "prem_att.json";
-    var myChart8 = "z_c.a_balance.json";
-    var myChart9 = "z_c.a_as_percent.json";
-    var myChart10 = "z_total_trade.json";
-    var myChart11 = "z_total_goods.json";
-    var myChart12 = "z_total_services.json";
-    var myChart13 = "z_total_primary.json";
-    var myChart14 = "z_total_secondary.json";
-    var myChart15 = "z_cap_acc_bal.json";
-    var myChart16 = "z_f.a_balance.json";
-    var myChart17 = "worldmap_blank.json";
-    var myChart18 = "worldmap_life_exp.json";
+    var myChart1 = "Wk1_us_inflation.json";
+    var myChart2 = "Wk1_us_gun_dths_inc.json";
+    var myChart3 = "Wk2_imfLending1.json";
+    var myChart4 = "Wk2_imfLending2.json";
+    var myChart5 = "Wk3_soviet_gdpcap.json";
+    var myChart6 = "Wk3_soviet_gdpcap2.json";
+    var myChart7 = "Wk4_prem_att.json";
+    var myChart8 = "Wk5_c.a_balance.json";
+    var myChart9 = "Wk5_c.a_as_percent.json";
+    var myChart10 = "Wk5_total_trade.json";
+    var myChart11 = "Wk5_total_goods.json";
+    var myChart12 = "Wk5_total_services.json";
+    var myChart13 = "Wk5_total_primary.json";
+    var myChart14 = "Wk5_total_secondary.json";
+    var myChart15 = "Wk5_cap_acc_bal.json";
+    var myChart16 = "Wk5_f.a_balance.json";
+    var myChart17 = "Wk7_worldmap_blank.json";
+    var myChart18 = "Wk7_worldmap_life_exp.json";
+    var myChart19 = "Wk8_Inactivity_Rate.json";
+    var myChart20 = "Wk8_Hourly_Earnings.json";
 
 
     // Embed charts:
@@ -139,6 +157,8 @@
     vegaEmbed('#Chart16', myChart16);
     vegaEmbed('#Chart17', myChart17);
     vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19);
+    vegaEmbed('#Chart20', myChart20);
 
 
 </script>
