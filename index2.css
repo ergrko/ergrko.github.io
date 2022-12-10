@@ -55,10 +55,10 @@ p{
     background-color: rgb(255, 255, 255);
     width:480px;
     margin: 0px 0px 0pc 320px ;
-    border-width: 9px;
-    border-left: 10px;
+    border-width: 2px;
+    border-left: 2px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 8px;
     border-color: rgb(0, 0, 0);   
 
     
@@ -80,7 +80,7 @@ p{
     width: 800px;
     border-width: 2px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 8px;
     border-color: black;
     text-align: center;
     display: block; 
@@ -94,7 +94,33 @@ p{
     width: 900px;
     border-width: 2px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 8px;
+    border-color: black;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+  }
+
+  #Chart19{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+  }
+
+  #Chart20{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
     border-color: black;
     text-align: center;
     display: block; 
