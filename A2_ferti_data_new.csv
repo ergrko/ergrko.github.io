@@ -1,0 +1,295 @@
+Country,Year,Value
+France,2021,1.79
+France,2020,1.7907
+France,2019,1.83
+France,2018,1.8428
+France,2017,1.861
+France,2016,1.8911
+France,2015,1.9268
+France,2014,1.9747
+France,2013,1.9724
+France,2012,1.9897
+France,2011,1.9945
+France,2010,2.0176
+France,2009,1.9899
+France,2008,1.9873
+France,2007,1.9521
+France,2006,1.974
+France,2005,1.9159
+France,2004,1.8982
+France,2003,1.873
+France,2002,1.8649
+France,2001,1.8792
+France,2000,1.8762
+France,1999,1.809
+France,1998,1.7762
+France,1997,1.7205
+France,1996,1.726
+France,1995,1.7085
+France,1994,1.6626
+France,1993,1.6634
+France,1992,1.7325
+France,1991,1.7697
+France,1990,1.7817
+France,1989,1.792
+France,1988,1.8091
+France,1987,1.8112
+France,1986,1.8396
+France,1985,1.8211
+France,1984,1.8123
+France,1983,1.8013
+France,1982,1.9209
+France,1981,1.9585
+France,1980,1.9577
+Germany,2021,1.53
+Germany,2020,1.519
+Germany,2019,1.5403
+Germany,2018,1.5599
+Germany,2017,1.5766
+Germany,2016,1.5897
+Germany,2015,1.5059
+Germany,2014,1.4727
+Germany,2013,1.42
+Germany,2012,1.4095
+Germany,2011,1.3878
+Germany,2010,1.3921
+Germany,2009,1.3578
+Germany,2008,1.3796
+Germany,2007,1.3692
+Germany,2006,1.3346
+Germany,2005,1.3408
+Germany,2004,1.356
+Germany,2003,1.341
+Germany,2002,1.3415
+Germany,2001,1.3498
+Germany,2000,1.38
+Germany,1999,1.363
+Germany,1998,1.3568
+Germany,1997,1.3631
+Germany,1996,1.3151
+Germany,1995,1.2495
+Germany,1994,1.2467
+Germany,1993,1.2847
+Germany,1992,1.3062
+Germany,1991,1.3459
+Germany,1990,1.4378
+Germany,1989,1.442
+Germany,1988,1.4583
+Germany,1987,1.4407
+Germany,1986,1.4149
+Germany,1985,1.3848
+Germany,1984,1.3928
+Germany,1983,1.4307
+Germany,1982,1.4896
+Germany,1981,1.5223
+Germany,1980,1.5382
+Japan,2021,1.2974
+Japan,2020,1.2936
+Japan,2019,1.2859
+Japan,2018,1.3338
+Japan,2017,1.3544
+Japan,2016,1.4325
+Japan,2015,1.4438
+Japan,2014,1.4219
+Japan,2013,1.4274
+Japan,2012,1.4081
+Japan,2011,1.3904
+Japan,2010,1.3878
+Japan,2009,1.3701
+Japan,2008,1.3672
+Japan,2007,1.3402
+Japan,2006,1.3168
+Japan,2005,1.2735
+Japan,2004,1.2878
+Japan,2003,1.2914
+Japan,2002,1.3186
+Japan,2001,1.3316
+Japan,2000,1.3668
+Japan,1999,1.344
+Japan,1998,1.3771
+Japan,1997,1.3909
+Japan,1996,1.4255
+Japan,1995,1.4242
+Japan,1994,1.4921
+Japan,1993,1.4638
+Japan,1992,1.4981
+Japan,1991,1.5267
+Japan,1990,1.5249
+Japan,1989,1.5716
+Japan,1988,1.6567
+Japan,1987,1.6866
+Japan,1986,1.6807
+Japan,1985,1.7401
+Japan,1984,1.7592
+Japan,1983,1.7481
+Japan,1982,1.7199
+Japan,1981,1.7019
+Japan,1980,1.7455
+Sweden,2021,1.67
+Sweden,2020,1.6703
+Sweden,2019,1.7173
+Sweden,2018,1.7559
+Sweden,2017,1.7859
+Sweden,2016,1.848
+Sweden,2015,1.8494
+Sweden,2014,1.8777
+Sweden,2013,1.8809
+Sweden,2012,1.9027
+Sweden,2011,1.9051
+Sweden,2010,1.9757
+Sweden,2009,1.9313
+Sweden,2008,1.9024
+Sweden,2007,1.8782
+Sweden,2006,1.8501
+Sweden,2005,1.7738
+Sweden,2004,1.7504
+Sweden,2003,1.7102
+Sweden,2002,1.6491
+Sweden,2001,1.571
+Sweden,2000,1.5434
+Sweden,1999,1.5024
+Sweden,1998,1.5074
+Sweden,1997,1.5288
+Sweden,1996,1.608
+Sweden,1995,1.732
+Sweden,1994,1.88
+Sweden,1993,1.994
+Sweden,1992,2.0811
+Sweden,1991,2.1114
+Sweden,1990,2.1219
+Sweden,1989,2.0188
+Sweden,1988,1.9588
+Sweden,1987,1.846
+Sweden,1986,1.798
+Sweden,1985,1.7363
+Sweden,1984,1.6581
+Sweden,1983,1.6136
+Sweden,1982,1.6164
+Sweden,1981,1.6349
+Sweden,1980,1.674
+United Kingdom,2021,1.562
+United Kingdom,2020,1.5606
+United Kingdom,2019,1.6292
+United Kingdom,2018,1.6808
+United Kingdom,2017,1.7419
+United Kingdom,2016,1.7964
+United Kingdom,2015,1.8087
+United Kingdom,2014,1.8126
+United Kingdom,2013,1.8306
+United Kingdom,2012,1.9091
+United Kingdom,2011,1.9106
+United Kingdom,2010,1.9168
+United Kingdom,2009,1.8923
+United Kingdom,2008,1.9044
+United Kingdom,2007,1.8642
+United Kingdom,2006,1.8106
+United Kingdom,2005,1.759
+United Kingdom,2004,1.7466
+United Kingdom,2003,1.6988
+United Kingdom,2002,1.6338
+United Kingdom,2001,1.6262
+United Kingdom,2000,1.6413
+United Kingdom,1999,1.6827
+United Kingdom,1998,1.7106
+United Kingdom,1997,1.7213
+United Kingdom,1996,1.7232
+United Kingdom,1995,1.7102
+United Kingdom,1994,1.7376
+United Kingdom,1993,1.759
+United Kingdom,1992,1.7927
+United Kingdom,1991,1.8159
+United Kingdom,1990,1.8287
+United Kingdom,1989,1.7955
+United Kingdom,1988,1.8198
+United Kingdom,1987,1.8089
+United Kingdom,1986,1.7807
+United Kingdom,1985,1.7894
+United Kingdom,1984,1.7663
+United Kingdom,1983,1.7663
+United Kingdom,1982,1.7782
+United Kingdom,1981,1.8166
+United Kingdom,1980,1.8898
+United States,2021,1.6619
+United States,2020,1.6428
+United States,2019,1.6892
+United States,2018,1.7179
+United States,2017,1.7598
+United States,2016,1.8127
+United States,2015,1.8424
+United States,2014,1.8593
+United States,2013,1.8558
+United States,2012,1.8779
+United States,2011,1.8943
+United States,2010,1.9325
+United States,2009,1.9997
+United States,2008,2.0683
+United States,2007,2.1118
+United States,2006,2.1016
+United States,2005,2.0575
+United States,2004,2.0479
+United States,2003,2.0421
+United States,2002,2.0195
+United States,2001,2.0272
+United States,2000,2.0465
+United States,1999,2.0051
+United States,1998,1.9921
+United States,1997,1.9677
+United States,1996,1.9707
+United States,1995,1.9716
+United States,1994,1.9946
+United States,1993,2.0129
+United States,1992,2.0389
+United States,1991,2.0541
+United States,1990,2.0692
+United States,1989,2.0051
+United States,1988,1.929
+United States,1987,1.8667
+United States,1986,1.833
+United States,1985,1.835
+United States,1984,1.8022
+United States,1983,1.7951
+United States,1982,1.8202
+United States,1981,1.808
+United States,1980,1.8308
+Western Europe,2021,1.6228
+Western Europe,2020,1.6104
+Western Europe,2019,1.6331
+Western Europe,2018,1.6499
+Western Europe,2017,1.6697
+Western Europe,2016,1.6928
+Western Europe,2015,1.6699
+Western Europe,2014,1.678
+Western Europe,2013,1.6525
+Western Europe,2012,1.6615
+Western Europe,2011,1.6586
+Western Europe,2010,1.6751
+Western Europe,2009,1.648
+Western Europe,2008,1.6556
+Western Europe,2007,1.6308
+Western Europe,2006,1.6227
+Western Europe,2005,1.6015
+Western Europe,2004,1.6007
+Western Europe,2003,1.5803
+Western Europe,2002,1.5743
+Western Europe,2001,1.5772
+Western Europe,2000,1.5918
+Western Europe,1999,1.5506
+Western Europe,1998,1.5313
+Western Europe,1997,1.5094
+Western Europe,1996,1.4869
+Western Europe,1995,1.4474
+Western Europe,1994,1.4363
+Western Europe,1993,1.4595
+Western Europe,1992,1.4983
+Western Europe,1991,1.5306
+Western Europe,1990,1.575
+Western Europe,1989,1.5745
+Western Europe,1988,1.5877
+Western Europe,1987,1.5789
+Western Europe,1986,1.5778
+Western Europe,1985,1.5549
+Western Europe,1984,1.5582
+Western Europe,1983,1.574
+Western Europe,1982,1.6506
+Western Europe,1981,1.6863
+Western Europe,1980,1.6963
