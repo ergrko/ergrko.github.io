@@ -1,0 +1,203 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my first proper css file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* BUTTONS */
+
+.MAIN_BUTTONS{
+  background-color: whitesmoke;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  justify-content:left;
+  list-style: none;
+  min-width: 300px;
+  width: 100%;
+  margin-top: 60px ;
+}
+
+
+a{
+  border: 5px;
+  border-color: black;
+  border-style: dashed;
+  text-align: center; 
+  margin:20px
+}
+
+#link1{
+  background-color: crimson;
+
+  padding:20px;
+  
+  border:2px;
+  border-color:black;
+  border-style: solid;
+  border-radius: 10px;
+  width: 95.8%;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:700;
+  color:white;
+  
+  text-decoration: none;
+  
+}
+
+
+#link2{
+  background-color: crimson;
+
+  padding:20px;
+  
+  border:2px;
+  border-color:black;
+  border-style: solid;
+  border-radius: 10px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:700;
+  color:white;
+  
+  text-decoration: none;
+  
+}
+
+#link2:hover{
+
+  background-color: whitesmoke;
+
+  border:2px;
+  border-color:black;
+  border-style: solid;
+  
+  color:black;
+}
+
+
+
+
+/* Set the background color for my page: */
+body{
+    background-color:crimson;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1, h3{
+    color:rgb(0, 0, 0);
+    font-family:Trebuchet MS, sans-serif;
+    text-align: center;
+    font-weight:bold ;
+
+}
+
+h3{
+    font-size:x-large;
+
+}
+
+p{
+    color:rgb(0, 0, 0);
+    font-family: Georgia;
+    text-align:center ;
+    font-size:medium;
+    
+}  
+
+
+.myWeek1{
+     margin: auto;
+    max-width: 1100px;
+    background-color: rgb(255, 255, 255);
+    border-style:double;
+    border-radius: 20px;
+    border-width: 8px;
+    border-color: rgb(0, 0, 0);
+}
+
+
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: rgb(255, 255, 255);
+    width:480px;
+    margin: 0px 0px 0pc 320px ;
+    border-width: 2px;
+    border-left: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: rgb(0, 0, 0);   
+
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    padding: 5px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .grid-item {
+    padding: 5px;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+  #Chart17{
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+
+}
+
+#Chart18{
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+  }
+
+  #Chart19{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+  }
+
+  #Chart20{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    
+  }
