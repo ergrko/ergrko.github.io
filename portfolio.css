@@ -1,203 +1,374 @@
-/* Richard Davies, Data Science for Economists */
+/* CSS file used for portfolio page. */
 
-/* This is my first proper css file */
-
-
-/* Import a font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-/* BUTTONS */
-
-.MAIN_BUTTONS{
-  background-color: whitesmoke;
-  overflow: hidden;
-  display: flex;
-  text-align: center;
-  justify-content:left;
-  list-style: none;
-  min-width: 300px;
-  width: 100%;
-  margin-top: 60px ;
-}
+/* Imported some nice fonts */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
 
-a{
-  border: 5px;
-  border-color: black;
-  border-style: dashed;
-  text-align: center; 
-  margin:20px
-}
+/* Top of Template of website */
 
-#link1{
-  background-color: crimson;
-
-  padding:20px;
-  
-  border:2px;
-  border-color:black;
-  border-style: solid;
-  border-radius: 10px;
-  width: 95.8%;
-
-  font-family: 'Courier New', Courier, monospace;
-  font-weight:700;
-  color:white;
-  
-  text-decoration: none;
-  
-}
-
-
-#link2{
-  background-color: crimson;
-
-  padding:20px;
-  
-  border:2px;
-  border-color:black;
-  border-style: solid;
-  border-radius: 10px;
-
-  font-family: 'Courier New', Courier, monospace;
-  font-weight:700;
-  color:white;
-  
-  text-decoration: none;
-  
-}
-
-#link2:hover{
-
-  background-color: whitesmoke;
-
-  border:2px;
-  border-color:black;
-  border-style: solid;
-  
-  color:black;
-}
-
-
-
-
-/* Set the background color for my page: */
 body{
-    background-color:crimson;
-    width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
+  background-color: paleturquoise;
+  max-width: 1600px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.TITLE_container {
+  background-color: darkturquoise;
+  text-align: center;
+  margin: auto;
+}   
+
+.NAME_container {
+  background-color: darkturquoise;
+  text-align: center;
+  margin: auto;
+}
+
+
+/* Add a black background color to the top navigation */
+.TOP_NAV {
+overflow: hidden;
+display: flex;
+background-color:rgb(0, 0, 0);
+text-align: center;
+justify-content:left;
+list-style: none;
+width: 100%;
+min-width: 280px;
+margin-top: 1em ;
+}
+
+/* Style the links inside the navigation bar */
+.TOP_NAV a {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  padding-top: clamp(0.5em,1%,1.5em);
+  padding-bottom: clamp(0.5em,1%,1.5em);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3em;
+  font-family: 'Work Sans', sans-serif;
+  color:white;
+  cursor: pointer;
+  width: 25%;
+}
+
+/* Change the color of links on hover */
+.TOP_NAV a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.TOP_NAV a.active {
+  background-color: aquamarine;
+  color: black;
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3{
-    color:rgb(0, 0, 0);
-    font-family:Trebuchet MS, sans-serif;
-    text-align: center;
-    font-weight:bold ;
-
+h1{
+  color:black;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 66px;
+  text-align: center;
+  margin: 20px 0px;
 }
+h2{
+color:black;
+font-family: 'Work Sans', sans-serif;
+font-size: 60px;
+text-align: center;
+margin: 20px 0px;
+
+
+}  
 
 h3{
-    font-size:x-large;
+color:black;
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+font-size: 30px;
+}
 
+h4{
+color: black;
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+font-size: 30px;
 }
 
 p{
-    color:rgb(0, 0, 0);
-    font-family: Georgia;
-    text-align:center ;
-    font-size:medium;
-    
-}  
+color:rgb(17, 17, 17);
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+font-size: 22px;
+max-width: 70%;
+margin: 0 auto;
+margin-bottom: 20px;
 
+}
 
-.myWeek1{
-     margin: auto;
-    max-width: 1100px;
-    background-color: rgb(255, 255, 255);
-    border-style:double;
-    border-radius: 20px;
-    border-width: 8px;
-    border-color: rgb(0, 0, 0);
+.BODY_container{
+  margin: auto;
 }
 
 
 /* Set the apperance of the class, chart */
 .chart{
     background-color: rgb(255, 255, 255);
-    width:480px;
-    margin: 0px 0px 0pc 320px ;
+    width:auto;
+    margin: auto ;
     border-width: 2px;
     border-left: 2px;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 6px;
     border-color: rgb(0, 0, 0);   
 
     
 }
 .grid-container {
-    display: grid;
-    grid-template-columns: 370px 370px 370px;
-    padding: 5px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .grid-item {
-    padding: 5px;
-    font-size: 10px;
-    margin: 0 auto;
-  }
+  display: grid;
+  grid-template-columns: auto auto auto;  /* specify 3 columns */
+  grid-gap: 0px;  /* specify a gap value here */
+  justify-items: center;  /* center the items along the x-axis */
+  margin: auto;
+  max-width: 900px;
+}
+
+    
+  
   #Chart17{
     background-color: rgb(255, 255, 255);
-    width: 800px;
+    width: auto;
     border-width: 2px;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 6px;
     border-color: black;
     text-align: center;
-    display: block; 
-    margin: 0 auto;
+    margin: auto;
     
 
 }
 
 #Chart18{
-    background-color: rgb(255, 255, 255);
-    width: 900px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 8px;
-    border-color: black;
-    text-align: center;
-    display: block; 
-    margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: black;
+  text-align: center;
+  margin: auto;
     
   }
 
   #Chart19{
     background-color: rgb(255, 255, 255);
-    width: 500px;
+    width: auto;
     border-width: 2px;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 6px;
     border-color: black;
     text-align: center;
-    display: block; 
-    margin: 0 auto;
+    margin: auto;
     
   }
 
   #Chart20{
     background-color: rgb(255, 255, 255);
-    width: 500px;
+    width:auto;
     border-width: 2px;
     border-style: solid;
-    border-radius: 8px;
-    border-color: black;
-    text-align: center;
-    display: block; 
-    margin: 0 auto;
+    border-radius: 6px;
+    border-color: rgb(0, 0, 0); 
+    text-align: center;  
+    margin: auto ;
     
   }
+
+
+
+
+
+
+
+
+
+/*FOOTER */
+.PageBottom {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkturquoise;
+  color: black;
+  text-align: center;
+}
+
+
+
+/* Override certain properties for small screen sizes (e.g. smartphones) */
+@media (max-width: 600px) {
+  body{
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+  }
+
+  
+  .chart{
+      width:auto;
+      margin: 0px 0px 0pc 20px ;
+      border-width: 2px;
+      border-left: 2px;
+      border-style: none;
+
+  
+      
+  }
+  .grid-container {
+    display: grid;
+    max-width: 1000px; 
+    grid-column-gap: 1px;
+    grid-row-gap: 3px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+    #Chart17{
+      margin: 0 auto;
+      border-style: none;
+      width:auto;
+
+  }
+  
+  #Chart18{
+      margin: 0 auto;
+      border-style: none;
+      width:auto;
+
+    }
+  
+    #Chart19{
+      margin: 0px 0px 0pc 20px ;
+      border-width: 2px;
+      border-left: 2px;
+      border-style: none;
+      width:auto;
+
+    }
+  
+    #Chart20{
+      margin: 0px 0px 0pc 20px ;
+      border-width: 2px;
+      border-left: 2px;
+      border-style: none;
+      width:auto;
+
+    }
+
+  h1{
+font-size: 32px;
+
+  }
+
+  h2{
+    color:black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 29px;
+    text-align: center;
+    margin: 10px 0px;
+
+
+}  
+
+h3{
+    color:black;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+h4{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 19px;
+}
+
+p{
+    color:rgb(17, 17, 17);
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+.TOP_NAV a {
+  font-size:10px;
+}
+
+/*
+
+.BUTTON a{
+  width: 30%;
+  margin:20px;
+  margin: auto;  
+}
+*/
+
+}
+
+  /*  code for buttons (e.g links to colab/website/databases/json/etc  
+
+  .BUTTON a{
+    display: block;
+    text-align: center;
+    width: 15%;
+    margin:20px;
+    margin: auto;  
+
+}  
+
+
+#link1{
+    background-color:black;
+
+    padding:20px;
+    
+    border:1px;
+    border-color:whitesmoke;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight:700;
+    color:white;
+    
+    text-decoration: none;
+}
+    
+
+#link1:hover{
+
+    background-color: white;
+
+    border:2px;
+    border-color:darkturquoise;
+    border-style: solid;
+    
+    color:black;
+
+
+
+
+*/
+

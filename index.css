@@ -2,116 +2,263 @@
 
 /* CSS file used for home page. */
 
-/* I Import a nicer font */
+/* Imported some nice fonts */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
 
 /*TEXT*/
 
-h1, h2, h3{
-    font-family: 'Lora', sans-serif;
-    background-color: white;
+
+
+h1{
+    color:black;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 66px;
+    text-align: center;
+    margin: 20px 0px;
+
+
+}  
+
+h2{
+    color:black;
+font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
 }
 
 p{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
-    font-variant: small-caps;
-    color:blue;
-    background-color: white;
+    color:rgb(17, 17, 17);
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
 }
 
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+li {
+  font-size: 23px;
+  margin-left: 20px;
+  text-align:center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+/* style the bullet points */
+li::before {
+  content: "•";
+  color: black;
+  font-size: 22px;
+  display: inline-block;
+  width: 1em;
+  margin-right: 8px;
+}
+
+.underline {
+  text-decoration: underline;
+}
 
 /* AREAS OF THE PAGE */
 
 /*Background*/
 
 body{
-    background-color: whitesmoke;
+    background-color: paleturquoise;
 }
 
 
-
-
-/* BUTTONS */
-
-.MAIN_BUTTONS{
-    background-color: whitesmoke;
-    overflow: hidden;
-    display: flex;
+  .TITLE_container {
+    background-color: darkturquoise;
     text-align: center;
-    justify-content:left;
-    list-style: none;
-    min-width: 300px;
-    width: 100%;
-    margin-top: 60px ;
+    margin: 20px 0px 10px 0px;
+}   
+
+.NAME_container {
+    background-color: darkturquoise;
+    text-align: center;
+    margin: 10px 0px;
 }
 
 
-a{
-    border: 5px;
-    border-color: black;
-    border-style: dashed;
-    text-align: center; 
-    margin:20px
+/* Add a black background color to the top navigation */
+.TOP_NAV {
+  overflow: hidden;
+  display: flex;
+  background-color:rgb(0, 0, 0);
+  text-align: center;
+  justify-content:left;
+  list-style: none;
+  width: 100%;
+  min-width: 280px;
+  margin-top: 1em ;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .TOP_NAV a {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    padding-top: clamp(0.5em,1%,1.5em);
+    padding-bottom: clamp(0.5em,1%,1.5em);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3em;
+    font-family: 'Work Sans', sans-serif;
+    color:white;
+    cursor: pointer;
+    width: 25%;
+  }
+  
+  /* Change the color of links on hover */
+  .TOP_NAV a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .TOP_NAV a.active {
+    background-color: aquamarine;
+    color: black;
+  }
+
+
+.BODY_container {
+    background-color: transparent;
+    text-align: center;
+    margin: 10px 0px;
 }
+
+.MIDDLE_BUTTON a{
+    display: block;
+    text-align: center;
+    width: 15%;
+    margin:20px;
+    margin: auto;  
+
+}  
+
 
 #link1{
-    background-color: crimson;
+    background-color:black;
 
     padding:20px;
     
-    border:2px;
-    border-color:black;
+    border:1px;
+    border-color:whitesmoke;
     border-style: solid;
     border-radius: 10px;
-    width: 45%;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Work Sans', sans-serif;
     font-weight:700;
     color:white;
     
     text-decoration: none;
-    
 }
-
-
-#link2{
-    background-color: crimson;
-
-    padding:20px;
     
-    border:2px;
-    border-color:black;
-    border-style: solid;
-    border-radius: 10px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-weight:700;
-    color:white;
-    
-    text-decoration: none;
-    
-}
+#link1:hover{
 
-#link2:hover{
-
-    background-color: whitesmoke;
+    background-color: white;
 
     border:2px;
-    border-color:black;
+    border-color:darkturquoise;
     border-style: solid;
     
     color:black;
+
 }
 
 
+
+
+/*FOOTER */
 .PageBottom {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: transparent;
-    color: red;
+    background-color: darkturquoise;
+    color: black;
     text-align: center;
 }
 
+
+/* Override the font size for small screen sizes (e.g. smartphones) */
+@media (max-width: 600px) {
+  h1{
+    color:black;
+    font-size: 32px;
+    text-align: center;
+    margin: 10px 0px;
+
+
+}  
+
+h2{
+    color:black;
+font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+h3{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 19px;
+}
+
+p{
+    color:rgb(17, 17, 17);
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+li {
+  font-size: 16px;
+  margin-left: 45px;
+  text-align:left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+  .TOP_NAV a {
+    font-size:10px;
+  }
+
+  .MIDDLE_BUTTON a{
+    width: 30%;
+    margin:20px;
+    margin: auto;  
+
+}  
+
+}
