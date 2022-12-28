@@ -28,7 +28,7 @@
       }
     ],
     "data": {
-      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/GII_data_cleaned.csv",
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/GII_data_cleaned_NEW.csv",
       "format": {"type": "csv"}
     },
     "transform": [
