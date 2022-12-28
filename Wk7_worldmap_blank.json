@@ -2,13 +2,18 @@
   {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "width": 700,
-    "height": 350,
-
+    "width": 575,
+    "height": 330,
+    "config": {"background": "white", "view": {"stroke": "transparent"},
+    "padding": {"top": 6}
+    },
     "title": {
         "text": "Map of the World",
-        "anchor": "start",
-        "color": "black"},
+        "subtitle": "Source: https://geojson-maps.ash.ms/ ",
+        "fontSize": 15,
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 11,
+        "anchor": "middle",        "color": "black"},
   
     "data":{
       "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/world.geo.json",

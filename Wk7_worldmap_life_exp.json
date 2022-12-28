@@ -1,54 +1,51 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "width": 700,
+    "width": 600,
     "height": 350,
-
+    "config": {"background": "white", "view": {"stroke": "transparent"},
+    "padding": {"top": 6}
+    },
     "title": {
         "text": "Global Life Expectancy at birth, 2020",
+        "fontSize": 15,
         "subtitle": "Life Expectancy at birth by Country, total in years, 2020. Source: World Bank",
         "subtitleFontStyle":"italic",
-        "subtitleFontSize":10,
-        "anchor": "start",
+        "subtitleFontSize":11,
+        "anchor": "middle",
         "color": "black"},
   
     "data":{
       "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/world.geo.json",
       "format":{"property": "features"}},
   
-          "projection":{
-              "type":"naturalEarth1"
-          },
+    "projection":{
+          "type":"naturalEarth1"
+            },
 
-          "transform":[
-            {
-                "lookup":"properties.name",
-                "from":{
-                    "data":{
-                        "url":"https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/life_exp_world_new.csv"},
-                    "key":"country",
-                    "fields":["Life expectancy at birth"]
+    "transform":[ 
+      { "lookup":"properties.name",
+          "from":{
+            "data":{
+              "url":"https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/life_exp_world_new.csv"},
+              "key":"country",
+              "fields":["Life expectancy at birth"]
                     }
-                }
-          ],
-          "mark":{
+                  }
+                ],
+    "mark":{
             "type":"geoshape",
             "stroke": "darkgrey",
             "strokeWidth": 1.2
           },
   
-          "encoding":{
-              "tooltip":[
-                {
-                    "field":"properties.name", 
-                    "type": "nominal",
-                    "title": "Country"},
-                {"field":"Life expectancy at birth", "title": "Life Expectancy in Years (at birth)"}
-                ],
+    "encoding":{
+    
+    "tooltip":[
+          { "field":"properties.name", "type": "nominal",
+              "title": "Country"}, {"field":"Life expectancy at birth", "title": "Life Expectancy in Years (at birth)"}
+        ],
 
-             "color":{
-                "field": "Life expectancy at birth",
-                "type": "quantitative"
-          }
+    "color":{"field": "Life expectancy at birth", "type": "quantitative", "legend": {"orient": "bottom-left", "direction": "horizontal"}}
           }
   }
