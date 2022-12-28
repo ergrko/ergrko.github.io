@@ -1,0 +1,62 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 410,
+      "config": {"background": "white", "view": {"stroke": "transparent"},
+      "padding": {"top": 7}
+      },
+    "title": {
+      "text": "Global Innovation Index (GII)",
+      "subtitle": "Covers 2013-2022, Includes tooltip for Global ranking that year. Source: WIPO",
+      "fontSize": 15,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11,
+      "anchor": "middle",
+      "color": "#000000",
+      "subtitleColor": "#000000"
+    },
+    "params": [
+      {
+        "name": "yearSelector",
+        "value": 2022,
+        "bind": {
+          "input": "range",
+          "min": 2013,
+          "max": 2022,
+          "step": 1,
+          "name": "Select the Year:"}
+      }
+    ],
+    "data": {
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/GII_data_cleaned.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"filter": "datum.Year == yearSelector"},
+      {
+        "lookup": "Country",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/world.geo.json",
+            "format": {"property": "features"}
+          },
+          "key": "properties.name",
+          "fields": ["properties", "type", "geometry"]
+        }
+      }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {"type": "geoshape", "stroke": "darkgrey", "strokeWidth": 1.0},
+    "encoding": {
+      "color": {
+        "field": "Index Score",
+        "legend": {"orient": "bottom-left", "direction": "horizontal"},
+        "type": "quantitative",
+        "scale": {"scheme": "yellowgreenblue"}
+      },
+      "tooltip": [
+        {"field": "properties.name", "type": "nominal", "title": "Country"},
+        {"field": "Index Score", "title": "Index Score"},{"field": "Global Ranking", "title": "Global Ranking"} 
+      ]
+    }
+  }
