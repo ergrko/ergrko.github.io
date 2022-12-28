@@ -130,15 +130,15 @@
 227,86,Bhutan,31.8,2014
 405,121,Bhutan,26.1,2015
 521,96,Bhutan,27.9,2016
-916,110,Bolivia,24.8,2019
-1040,105,Bolivia,22.4,2020
-1170,104,Bolivia,23.4,2021
-252,111,Bolivia,27.8,2014
 94,95,Bolivia,30.5,2013
+252,111,Bolivia,27.8,2014
 388,104,Bolivia,28.6,2015
 534,109,Bolivia,25.2,2016
 659,106,Bolivia,25.6,2017
 797,117,Bolivia,22.9,2018
+916,110,Bolivia,24.8,2019
+1040,105,Bolivia,22.4,2020
+1170,104,Bolivia,23.4,2021
 64,65,Bosnia and Herz.,36.2,2013
 222,81,Bosnia and Herz.,32.4,2014
 363,79,Bosnia and Herz.,32.3,2015
@@ -203,7 +203,7 @@
 675,122,Burundi,21.3,2017
 934,128,Burundi,17.6,2019
 1328,130,Burundi,12.3,2022
-1307,109,Côte d'Ivoire,17.8,2022
+102,103,Cabo Verde,29.7,2013
 238,97,Cabo Verde,30.1,2014
 387,103,Cabo Verde,28.6,2015
 1035,100,Cabo Verde,23.9,2020
@@ -238,7 +238,6 @@
 952,17,Canada,52.3,2020
 1082,16,Canada,53.1,2021
 1213,15,Canada,50.8,2022
-102,103,Cabo Verde,29.7,2013
 45,46,Chile,40.6,2013
 187,46,Chile,40.6,2014
 326,42,Chile,41.2,2015
@@ -279,13 +278,6 @@
 991,56,Costa Rica,33.5,2020
 1122,56,Costa Rica,34.5,2021
 1266,68,Costa Rica,28.7,2022
-909,103,Côte d'Ivoire,25.6,2019
-135,136,Côte d'Ivoire,23.4,2013
-257,116,Côte d'Ivoire,27,2014
-400,116,Côte d'Ivoire,27.2,2015
-533,108,Côte d'Ivoire,25.8,2016
-665,112,Côte d'Ivoire,24,2017
-1180,114,Côte d'Ivoire,21,2021
 36,37,Croatia,41.9,2013
 183,42,Croatia,40.7,2014
 324,40,Croatia,41.7,2015
@@ -312,12 +304,20 @@
 452,27,Czechia,49.4,2016
 577,24,Czechia,51,2017
 707,27,Czechia,48.7,2018
-1090,24,Czechia,49,2021
-1228,30,Czechia,42.8,2022
 832,26,Czechia,49.4,2019
 959,24,Czechia,48.3,2020
+1090,24,Czechia,49,2021
+1228,30,Czechia,42.8,2022
+135,136,Côte d'Ivoire,23.4,2013
+257,116,Côte d'Ivoire,27,2014
+400,116,Côte d'Ivoire,27.2,2015
+533,108,Côte d'Ivoire,25.8,2016
+665,112,Côte d'Ivoire,24,2017
 803,123,Côte d'Ivoire,20,2018
+909,103,Côte d'Ivoire,25.6,2019
 1047,112,Côte d'Ivoire,21.2,2020
+1180,114,Côte d'Ivoire,21,2021
+1307,109,Côte d'Ivoire,17.8,2022
 8,9,Denmark,58.3,2013
 149,8,Denmark,57.5,2014
 294,10,Denmark,57.7,2015
@@ -334,10 +334,10 @@
 501,76,Dominican Rep.,30.6,2016
 632,79,Dominican Rep.,31.2,2017
 767,87,Dominican Rep.,29.3,2018
-1159,93,Dominican Rep.,25.1,2021
-1288,90,Dominican Rep.,22.7,2022
 893,87,Dominican Rep.,28.6,2019
 1025,90,Dominican Rep.,25.1,2020
+1159,93,Dominican Rep.,25.1,2021
+1288,90,Dominican Rep.,22.7,2022
 82,83,Ecuador,32.8,2013
 256,115,Ecuador,27.5,2014
 403,119,Ecuador,26.9,2015
@@ -486,8 +486,6 @@
 1038,103,Honduras,23,2020
 1174,108,Honduras,22.8,2021
 1311,113,Honduras,17.3,2022
-1080,14,Hong Kong,53.7,2021
-1212,14,Hong Kong,51.8,2022
 6,7,Hong Kong,59.4,2013
 151,10,Hong Kong,56.8,2014
 295,11,Hong Kong,57.2,2015
@@ -496,6 +494,8 @@
 694,14,Hong Kong,54.6,2018
 819,13,Hong Kong,55.5,2019
 946,11,Hong Kong,54.2,2020
+1080,14,Hong Kong,53.7,2021
+1212,14,Hong Kong,51.8,2022
 30,31,Hungary,46.9,2013
 176,35,Hungary,44.6,2014
 319,35,Hungary,43,2015
@@ -536,16 +536,16 @@
 1020,85,Indonesia,26.5,2020
 1153,87,Indonesia,27.1,2021
 1273,75,Indonesia,27.9,2022
-867,61,Iran,34.4,2019
-1002,67,Iran,30.9,2020
-1126,60,Iran,32.9,2021
-1251,53,Iran,32.9,2022
-261,120,Iran,26.1,2014
 112,113,Iran,27.3,2013
+261,120,Iran,26.1,2014
 390,106,Iran,28.4,2015
 503,78,Iran,30.5,2016
 628,75,Iran,32.1,2017
 745,65,Iran,33.4,2018
+867,61,Iran,34.4,2019
+1002,67,Iran,30.9,2020
+1126,60,Iran,32.9,2021
+1251,53,Iran,32.9,2022
 1329,131,Iraq,11.9,2022
 9,10,Ireland,57.9,2013
 152,11,Ireland,56.7,2014
@@ -627,12 +627,6 @@
 1021,86,Kenya,26.1,2020
 1151,85,Kenya,27.5,2021
 1286,88,Kenya,22.8,2022
-157,16,South Korea,55.3,2014
-17,18,South Korea,53.3,2013
-298,14,South Korea,56.3,2015
-436,11,South Korea,57.1,2016
-564,11,South Korea,57.7,2017
-692,12,South Korea,56.6,2018
 49,50,Kuwait,40,2013
 210,69,Kuwait,35.2,2014
 361,77,Kuwait,33.2,2015
@@ -653,9 +647,9 @@
 1029,94,Kyrgyzstan,24.5,2020
 1164,98,Kyrgyzstan,24.5,2021
 1292,94,Kyrgyzstan,21.1,2022
+1048,113,Laos,20.6,2020
 1183,117,Laos,20.2,2021
 1310,112,Laos,17.4,2022
-1048,113,Laos,20.6,2020
 32,33,Latvia,45.2,2013
 175,34,Latvia,44.8,2014
 317,33,Latvia,45.5,2015
@@ -747,7 +741,6 @@
 962,27,Malta,46.4,2020
 1093,27,Malta,47.1,2021
 1219,21,Malta,49.1,2022
-1327,129,Mauritania,12.4,2022
 52,53,Mauritania,38,2013
 181,40,Mauritania,40.9,2014
 333,49,Mauritania,39.2,2015
@@ -757,6 +750,7 @@
 888,82,Mauritania,30.6,2019
 987,52,Mauritania,34.4,2020
 1118,52,Mauritania,35.2,2021
+1327,129,Mauritania,12.4,2022
 1243,45,Mauritania,34.4,2022
 62,63,Mexico,36.8,2013
 207,66,Mexico,36,2014
@@ -768,12 +762,16 @@
 990,55,Mexico,33.6,2020
 1121,55,Mexico,34.5,2021
 1256,58,Mexico,31,2022
-184,43,Moldova,40.7,2014
 44,45,Moldova,40.9,2013
+184,43,Moldova,40.7,2014
 328,44,Moldova,40.5,2015
 471,46,Moldova,38.4,2016
 607,54,Moldova,36.8,2017
 728,48,Moldova,37.6,2018
+864,58,Moldova,35.5,2019
+994,59,Moldova,33,2020
+1130,64,Moldova,32.3,2021
+1254,56,Moldova,31.1,2022
 71,72,Mongolia,35.8,2013
 197,56,Mongolia,37.5,2014
 350,66,Mongolia,36.4,2015
@@ -845,10 +843,10 @@
 434,9,Netherlands,58.3,2016
 556,3,Netherlands,63.4,2017
 682,2,Netherlands,63.3,2018
-1072,6,Netherlands,58.6,2021
-1203,5,Netherlands,58,2022
 810,4,Netherlands,61.4,2019
 940,5,Netherlands,58.8,2020
+1072,6,Netherlands,58.6,2021
+1203,5,Netherlands,58,2022
 16,17,New Zealand,54.5,2013
 159,18,New Zealand,54.5,2014
 299,15,New Zealand,55.9,2015
@@ -871,10 +869,10 @@
 549,124,Niger,20.4,2016
 676,123,Niger,21.2,2017
 802,122,Niger,20.6,2018
-1195,129,Niger,17.8,2021
-1323,125,Niger,14.6,2022
 933,127,Niger,18.1,2019
 1063,128,Niger,17.8,2020
+1195,129,Niger,17.8,2021
+1323,125,Niger,14.6,2022
 119,120,Nigeria,26.6,2013
 251,110,Nigeria,27.8,2014
 412,128,Nigeria,23.7,2015
@@ -885,6 +883,12 @@
 1052,117,Nigeria,20.1,2020
 1184,118,Nigeria,20.1,2021
 1312,114,Nigeria,16.9,2022
+50,51,North Macedonia,38.2,2013
+201,60,North Macedonia,36.9,2014
+340,56,North Macedonia,38,2015
+483,58,North Macedonia,35.4,2016
+614,61,North Macedonia,35.4,2017
+764,84,North Macedonia,29.9,2018
 865,59,North Macedonia,35.3,2019
 992,57,North Macedonia,33.4,2020
 1125,59,North Macedonia,34.1,2021
@@ -989,14 +993,6 @@
 1005,70,Qatar,30.8,2020
 1134,68,Qatar,31.5,2021
 1250,52,Qatar,32.9,2022
-1071,5,South Korea,59.3,2021
-1204,6,South Korea,57.8,2022
-817,11,South Korea,56.6,2019
-945,10,South Korea,56.1,2020
-1130,64,Moldova,32.3,2021
-1254,56,Moldova,31.1,2022
-864,58,Moldova,35.5,2019
-994,59,Moldova,33,2020
 47,48,Romania,40.3,2013
 196,55,Romania,38.1,2014
 338,54,Romania,38.2,2015
@@ -1013,10 +1009,10 @@
 468,43,Russia,38.5,2016
 598,45,Russia,38.8,2017
 726,46,Russia,37.9,2018
-1111,45,Russia,36.6,2021
-1245,47,Russia,34.3,2022
 852,46,Russia,37.6,2019
 982,47,Russia,35.6,2020
+1111,45,Russia,36.6,2021
+1245,47,Russia,34.3,2022
 111,112,Rwanda,27.6,2013
 243,102,Rwanda,29.3,2014
 378,94,Rwanda,30.1,2015
@@ -1099,6 +1095,16 @@
 995,60,South Africa,32.7,2020
 1127,61,South Africa,32.7,2021
 1259,61,South Africa,29.8,2022
+17,18,South Korea,53.3,2013
+157,16,South Korea,55.3,2014
+298,14,South Korea,56.3,2015
+436,11,South Korea,57.1,2016
+564,11,South Korea,57.7,2017
+692,12,South Korea,56.6,2018
+817,11,South Korea,56.6,2019
+945,10,South Korea,56.1,2020
+1071,5,South Korea,59.3,2021
+1204,6,South Korea,57.8,2022
 25,26,Spain,49.4,2013
 168,27,Spain,49.3,2014
 311,27,Spain,49.1,2015
@@ -1122,9 +1128,6 @@
 140,141,Sudan,19.8,2013
 284,143,Sudan,12.7,2014
 425,141,Sudan,15,2015
-103,104,eSwatini,29.6,2013
-268,127,eSwatini,25.3,2014
-407,123,eSwatini,25.4,2015
 1,2,Sweden,61.4,2013
 144,3,Sweden,62.3,2014
 287,3,Sweden,62.4,2015
@@ -1146,9 +1149,6 @@
 1067,1,Switzerland,65.5,2021
 1199,1,Switzerland,64.6,2022
 133,134,Syria,23.7,2013
-340,56,North Macedonia,38,2015
-614,61,North Macedonia,35.4,2017
-764,84,North Macedonia,29.9,2018
 100,101,Tajikistan,30,2013
 278,137,Tajikistan,23.7,2014
 398,114,Tajikistan,27.5,2015
@@ -1159,12 +1159,16 @@
 1044,109,Tajikistan,22.2,2020
 1169,103,Tajikistan,23.9,2021
 1302,104,Tajikistan,18.8,2022
-264,123,Tanzania,25.6,2014
 122,123,Tanzania,26.4,2013
+264,123,Tanzania,25.6,2014
 401,117,Tanzania,27,2015
 530,105,Tanzania,26.4,2016
 649,96,Tanzania,28,2017
 772,92,Tanzania,28.1,2018
+903,97,Tanzania,26.6,2019
+1023,88,Tanzania,25.6,2020
+1156,90,Tanzania,25.6,2021
+1301,103,Tanzania,19.4,2022
 56,57,Thailand,37.6,2013
 189,48,Thailand,39.3,2014
 339,55,Thailand,38.1,2015
@@ -1175,9 +1179,6 @@
 979,44,Thailand,36.7,2020
 1109,43,Thailand,37.2,2021
 1241,43,Thailand,34.9,2022
-50,51,North Macedonia,38.2,2013
-201,60,North Macedonia,36.9,2014
-483,58,North Macedonia,35.4,2016
 138,139,Togo,23,2013
 283,142,Togo,17.6,2014
 424,140,Togo,18.4,2015
@@ -1243,34 +1244,30 @@
 466,41,United Arab Emirates,39.4,2016
 588,35,United Arab Emirates,43.2,2017
 718,38,United Arab Emirates,42.6,2018
-1099,33,United Arab Emirates,43,2021
-1229,31,United Arab Emirates,42.1,2022
 842,36,United Arab Emirates,42.2,2019
 969,34,United Arab Emirates,41.8,2020
+1099,33,United Arab Emirates,43,2021
+1229,31,United Arab Emirates,42.1,2022
 2,3,United Kingdom,61.2,2013
 143,2,United Kingdom,62.4,2014
 286,2,United Kingdom,62.4,2015
 428,3,United Kingdom,61.9,2016
 558,5,United Kingdom,60.9,2017
 684,4,United Kingdom,60.1,2018
-1070,4,United Kingdom,59.8,2021
-1202,4,United Kingdom,59.7,2022
 811,5,United Kingdom,61.3,2019
 939,4,United Kingdom,59.8,2020
-1156,90,Tanzania,25.6,2021
-1301,103,Tanzania,19.4,2022
-903,97,Tanzania,26.6,2019
-1023,88,Tanzania,25.6,2020
+1070,4,United Kingdom,59.8,2021
+1202,4,United Kingdom,59.7,2022
 4,5,United States of America,60.3,2013
 147,6,United States of America,60.1,2014
 289,5,United States of America,60.1,2015
 429,4,United States of America,61.4,2016
 557,4,United States of America,61.4,2017
 686,6,United States of America,59.8,2018
-1069,3,United States of America,61.3,2021
-1200,2,United States of America,61.8,2022
 809,3,United States of America,61.7,2019
 938,3,United States of America,60.6,2020
+1069,3,United States of America,61.3,2021
+1200,2,United States of America,61.8,2022
 51,52,Uruguay,38.1,2013
 213,72,Uruguay,34.8,2014
 352,68,Uruguay,35.8,2015
@@ -1287,8 +1284,8 @@
 1028,93,Uzbekistan,24.5,2020
 1152,86,Uzbekistan,27.4,2021
 1280,82,Uzbekistan,25.3,2022
-263,122,Venezuela,25.7,2014
 113,114,Venezuela,27.3,2013
+263,122,Venezuela,25.7,2014
 416,132,Venezuela,22.8,2015
 545,120,Venezuela,22.3,2016
 75,76,Vietnam,34.8,2013
@@ -1330,3 +1327,6 @@
 1055,120,Zimbabwe,20,2020
 1179,113,Zimbabwe,21.9,2021
 1305,107,Zimbabwe,18.1,2022
+103,104,eSwatini,29.6,2013
+268,127,eSwatini,25.3,2014
+407,123,eSwatini,25.4,2015
