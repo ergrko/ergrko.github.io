@@ -7,8 +7,8 @@
       "color": "black","anchor": "middle"
   
     },
-    "height": 350, "width": 400,
-  "config": { "padding": { "top": 10, "bottom": 8, "left": 8, "right": 8}, 
+    "height": 300, "width": 350,
+  "config": { "padding": { "top": 10, "bottom": 8, "left": 8, "right": 5}, 
   "background": "white", "view": {"stroke": "transparent"}
   },
     "data": { "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/Innovation_Spend_cleaned_FINAL.csv", "format": {"type": "csv"}
@@ -35,12 +35,12 @@
     "field": "High-technology exports (in Thousands, at current US$, 2020)",
     "type": "quantitative",
     "title": "High-Tech Exports*** ('000s)",
-    "scale": {"rangeMax": 5000},
+    "scale": {"rangeMax": 4500},
     "legend": {
       "title": "High-Tech Exports ('000s)***",
       "orient": "right",
-              "labelFontSize": 10,
-              "titleFontSize": 11
+              "labelFontSize": 9,
+              "titleFontSize": 10
     }
   },
           "tooltip": [
@@ -83,8 +83,8 @@
         ],
         "mark": {
           "type": "text", "color": "firebrick",
-          "x": 360, "align": "right", "y": 45,
-      "fontSize": 17
+          "x": 300, "align": "right", "y": 30,
+      "fontSize": 15
             },
         "encoding": {"text": {"type": "ordinal", "field": "R2"}}
       }

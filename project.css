@@ -124,11 +124,11 @@ p{
 /* Set the apperance of the class, chart */
 .chart{
     background-color: rgb(255, 255, 255);
-    width:auto;
+    width: auto;
     margin: auto ;
     border-width: 2px;
     border-left: 2px;
-    border-style: solid;
+    border-style: none;
     border-radius: 6px;
     border-color: rgb(0, 0, 0);   
 
@@ -137,12 +137,15 @@ p{
 
 #Chart1{
   margin: 0 auto;
-  border-style: none;
   width:auto;
 
 }
 
+#Chart2{
+  margin: 0 auto;
+  width: 570px;
 
+}
 
 
 
@@ -186,7 +189,18 @@ p{
 
     }
 
-  
+    #Chart1{
+      margin: 0 auto;
+      width:auto;
+    
+    }
+    
+    #Chart2{
+      margin: 0 auto;
+      width:auto;
+    
+    }
+    
     h1{
   font-size: 32px;
   
