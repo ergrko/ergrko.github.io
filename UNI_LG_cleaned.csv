@@ -1,5 +1,5 @@
 Country,Rank,Number of Universities
-United States of America,100,56
+United States,100,56
 United Kingdom,100,8
 Australia,100,7
 Canada,100,6
@@ -15,7 +15,7 @@ Finland,100,1
 Japan,100,1
 Norway,100,1
 Denmark,100,1
-United States of America,101-200,36
+United States,101-200,36
 United Kingdom,101-200,11
 Australia,101-200,3
 Canada,101-200,5
@@ -31,7 +31,7 @@ Finland,101-200,0
 Japan,101-200,1
 Norway,101-200,2
 Denmark,101-200,2
-United States of America,201-500,60
+United States,201-500,60
 United Kingdom,201-500,24
 Australia,201-500,13
 Canada,201-500,13
@@ -47,7 +47,7 @@ Finland,201-500,5
 Japan,201-500,10
 Norway,201-500,1
 Denmark,201-500,2
-United States of America,501-1000,101
+United States,501-1000,101
 United Kingdom,501-1000,36
 Australia,501-1000,12
 Canada,501-1000,9
