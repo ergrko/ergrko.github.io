@@ -1,20 +1,20 @@
 Country,Rank,Number of Universities
-United States,Top 100,56
-United Kingdom,Top 100,8
-Australia,Top 100,7
-Canada,Top 100,6
-China,Top 100,4
-Netherlands,Top 100,3
-Switzerland,Top 100,3
-Germany,Top 100,2
-Hong Kong,Top 100,2
-Belgium,Top 100,2
-Singapore,Top 100,2
-Brazil,Top 100,1
-Finland,Top 100,1
-Japan,Top 100,1
-Norway,Top 100,1
-Denmark,Top 100,1
+United States,0-100,56
+United Kingdom,0-100,8
+Australia,0-100,7
+Canada,0-100,6
+China,0-100,4
+Netherlands,0-100,3
+Switzerland,0-100,3
+Germany,0-100,2
+Hong Kong,0-100,2
+Belgium,0-100,2
+Singapore,0-100,2
+Brazil,0-100,1
+Finland,0-100,1
+Japan,0-100,1
+Norway,0-100,1
+Denmark,0-100,1
 United States,101-200,36
 United Kingdom,101-200,11
 Australia,101-200,3
