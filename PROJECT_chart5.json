@@ -1,0 +1,69 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "",
+    "config": { "padding": { "top": 6, "bottom": 0, "left": 3, "right": 5}, 
+      "background": "white", "view": {"stroke": "transparent"}
+      },
+    "title": {
+      "text": "'Business Environment Rankings (BER)' for two time periods",
+      "anchor": "center",
+      "color": "black",
+      "subtitle": [ "Max Index value = 10. Covers two periods; 2009-2013, 2014-2018. " , "", "Tool-tip includes ranking for that period. Source: The Economist" ],
+      "subtitleFontStyle": "italic",
+      "fontSize": 15, "subtitleFontSize": 11,
+      "subtitleColor": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/BUS_ENV_scrape_cleaned.csv"
+    },
+    "width": 350, "height": 390,
+    
+    "repeat": {
+      "layer": [
+        "2009-2013",
+        "2014-2018"
+      ]
+    },
+    "spec": {
+      "mark": {"type": "bar", "point": false, "color": "skyblue"},
+      "encoding": {
+        "y": {
+          "field": "Country",
+          "title": null,
+          "type": "nominal",
+          "axis": {"labelAngle": 0,"grid": false, "labelFontSize": 12}
+        },
+        "x": {
+          "field": {"repeat": "layer"},
+          "type": "quantitative",
+          "title": "BER Score",
+          "axis": {"grid": false, "labelFontSize": 12}
+        },
+        "color": {
+          "datum": {"repeat": "layer"},
+          "title": "Time Period",
+           "legend": {"symbolSize": 450},
+          "scale": {"scheme": "yellowgreenblue"}
+        },
+        "yOffset": {"datum": {"repeat": "layer"}},
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "Country"},
+  
+          {"field": "2009-2013",
+            "type": "quantitative",
+            "title": "BER Score ('09-13)"},
+  
+          {"field": "Global Rank (2009-13)",
+            "type": "quantitative",
+            "title": "Global Rank ('09-13)"},
+  
+          {"field": "2014-2018",
+            "type": "quantitative",
+            "title": "BER Score ('14-18)"},
+  
+          {"field": "Global Rank (2014-18)", "type": "quantitative", 
+          "title": "Global Rank ('14-18)"}
+        ]
+      }
+    }
+  }

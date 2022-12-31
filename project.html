@@ -95,16 +95,19 @@
         <p>---------------------------------------------------------------</p>
 
         <h4>The Ease of Innovation</h4>
+
+        <h4>Findings</h4>
+        <p>For innovation to uphold, a healthy and uplifting business environment is vital. To understand the ability of firms and individuals in bringing new ideas to markets, I chose to use data on ......</p>
         <div class="chart" id=" " ></div>
         <br><br>
-        <h4>Findings</h4>
-        <p>For innovation to uphold, a healthy and uplifting business environment is vital. To understand the ability of firms and individuals in bringing new ideas to markets, I chose to use data on ......Evidently, this plot shows that.......</p>
+        <p>Evidently, this plot shows that.......   </p>
 
+        <div class="chart" id="Chart5" ></div>
         <h4>The Data; Approach, Cleaning & Challenges</h4>
         <p>I chose this measure because......I chose this visualisation because......</p>
         <p>EDIT this info on measures used;'   '</p>
         <p>The main challenges I faced was the.....</p>
-        <p>Here a set of links to the xyz data --> INSERT LINK HERE . Here's the link to the colab where I cleaned the data --> httpXYZZZZZ . </p>
+        <p>Here a set of links to the xyz data --> INSERT LINK HERE . Here's the link to the colab where I scraped and cleaned the data --> https://colab.research.google.com/drive/1DYIuOBryvv_Jx4aJ3Nszx4nGXYg57dGG#scrollTo=GHEWJulJSN-M . </p>
 
         <p>---------------------------------------------------------------</p>
 
@@ -112,13 +115,17 @@
         <div class="chart" id="Chart6" ></div>
         <br><br>
         <h4>Findings</h4>
-        <p>The future labour force is a direct determinant of a country's innovative outputs. To help predict the trajectories for the most innovative nations, I chose to use data on the......Considering nations with at least 1 Top100 university, all these are near the top end of the GII measure for 2022 (First chart). This plot shows that.......</p>
+        <p>The future labour force/next generation is a direct determinant of a country's innovative outputs. To help predict the trajectories for the most innovative nations, I chose to use data on the......Considering nations with at least 1 Top100 university, all these are near the top end of the GII measure for 2022 (First chart). This plot shows that.......</p>
 
         <h4>The Data; Approach, Cleaning & Challenges</h4>
         <p>I chose this measure because......I chose this visualisation because......</p>
-        <p>EDIT this info on measures used;'   '</p>
+        <p>EDIT this info on measures used;'Web indicators are considered as proxies in the correct, comprehensive, deep evaluation of the university global performance, taking into account its activities and outputs and their relevance and impact.
+
+            At the end a reliable rank is only possible if the web presence is a trustworthy mirror of the university. 
+            In the second decade of the 21st century the Web is key for the future of all the university missions, as it is already the most important scholarly communication tool, 
+            the future channel for the off-campus distance learning, the open forum for the community engagement and the universal showcase for attracting talent, funding and resources.   '</p>
         <p>The main challenges I faced was the.....</p>
-        <p>Here a set of links to the xyz data --> INSERT LINK HERE . Here's the link to the colab where I cleaned the UNIVERSITY LEAGUE data --> https://colab.research.google.com/drive/1ZQ_Zle2UZAYEYmxmDUIYSq6Lcyt_IpLh#scrollTo=zl238mXsrzNK . </p>
+        <p>Here a set of links to the xyz data --> INSERT LINK HERE . Here's the link to the colab where I scraped and cleaned the UNIVERSITY LEAGUE data --> https://colab.research.google.com/drive/1ZQ_Zle2UZAYEYmxmDUIYSq6Lcyt_IpLh#scrollTo=zl238mXsrzNK . </p>
         
         <p>---------------------------------------------------------------</p>
 
@@ -157,6 +164,7 @@
     var myChart1 = "PROJECT_chart1.json";
     var myChart2 = "PROJECT_chart2.json";
 
+    var myChart5 = "PROJECT_chart5.json";
     var myChart6 = "PROJECT_chart6.json";
 
 
@@ -165,7 +173,8 @@
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
-
+    
+    vegaEmbed('#Chart5', myChart5);
     vegaEmbed('#Chart6', myChart6);
 
 
