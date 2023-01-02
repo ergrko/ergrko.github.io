@@ -1,84 +1,78 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/UNI_LG_cleaned.csv"
-    },
-    "mark": "bar",
-    "width": 500, "height": 340,
-    "config": { "padding": { "top": 6, "bottom": 0, "left": 3, "right": 5}, 
-    "background": "white", "view": {"stroke": "transparent"}
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/BUS_ENV_scrape_cleaned.csv"
     },
     "title": {
-      "text": "Number of Universities in Top 1000 by Country",
-      "subtitle": "2021 Edition. Source: Webometrics Ranking of World Universities (CSIC)",
-      "fontSize": 15, "subtitleFontStyle": "italic",
-      "subtitleFontSize": 11.3,
-      "anchor": "middle",
-      "color": "black"
+      "text": "'Business Environment Rankings' (BER) for two time periods",
+      "subtitle": [ "Max Index value = 10. Covers two periods; 2009-2013, 2014-2018. " , "", "*Tool-tip includes ranking for that period. Source: The Economist" , ""],
+      "subtitleFontStyle": "italic",
+       "fontSize": 14.5, 
+      "subtitleFontSize": 11.2,
+      "anchor": "center",
+      "color": "#000000",
+      "subtitleColor": "#000000"
     },
-    "transform": [
-      {"filter": {"selection": "SectorSelector"}},
-      {
-        "filter": {
-          "field": "Rank",
-          "oneOf": [
-            "0-100",
-            "101-200",
-            "201-500",
-            "501-1000"
-          ]
-        }
-      }
-    ],
-    "selection": {
-      "SectorSelector": {
-        "type": "single", 
-        "fields": ["Rank"],
-        "bind": {
-          "input": "select",
-          "options": [
-            null,
-            "0-100",
-            "101-200",
-            "201-500",
-            "501-1000"
-          ],
-          "name": "Pick Rank-Class;"
-        }
-      }
-    },
-    "encoding": {
-      "x": {
-        "field": "Country",
-        "type": "nominal",
-        "title": null,
-        "axis": {"grid": false, "labelFontSize": 12}
-      },
-      "y": {
-        "field": "Number of Universities",
-        "title": null,
-        "type": "quantitative",
-        "axis": {"grid": false, "labelFontSize": 11}
-      },
-      "color": {
-        "field": "Rank",
-        "type": "nominal",
-        "legend": {"orient": "top-left", "columns": 1, "offset": 40, "symbolSize": 250},
-        "scale": {"scheme": "yellowgreenblue"},
-        "title": "Rank Class"
-      },
-      "tooltip": [
-        {"field": "Rank", "title":"Rank Class"},
-        {
+    "height": 350,
+    "width": 280,
+    "config": { "padding": { "top": 10}, 
+    "background": "white", 
+    "view": {"stroke": "transparent"}},
+    "repeat": {"layer": ["2009-2013", "2014-2018"]},
+    "spec": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
           "field": "Country",
           "type": "nominal",
-          "title": "Country"
+          "title": null,
+          "axis": {
+            "grid": false,
+            "gridColor": "black"
+          }
         },
-        {
-          "field": "Number of Universities",
+        "x": {
+          "field": {"repeat": "layer"},
           "type": "quantitative",
-          "title": "No. of Universities"
-        }
-      ]
+          "title": "BER Score",
+          "axis": {
+            "grid": false,
+            "domainColor": "#000000",
+            "labelColor": "#000000",
+            "tickColor": "#000000",
+            "gridColor": "black",
+            "titleColor": "#000000"
+          }
+        },
+        "color": {
+          "datum": {"repeat": "layer"},
+          "title": "Time Period",
+          "scale": {"range": ["#87CEEB", "#4169E1"]},
+          "legend": {
+            "orient": "bottom",
+            "fillColor": "#ffffff",
+            "labelColor": "#000000"
+          }
+        },
+        "yOffset": {"datum": {"repeat": "layer"}},
+        "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+    
+            {"field": "2009-2013",
+              "type": "quantitative",
+              "title": "BER Score ('09-13)"},
+    
+            {"field": "Global Rank (2009-13)",
+              "type": "quantitative",
+              "title": "Global Rank ('09-13)"},
+    
+            {"field": "2014-2018",
+              "type": "quantitative",
+              "title": "BER Score ('14-18)"},
+    
+            {"field": "Global Rank (2014-18)", "type": "quantitative", 
+            "title": "Global Rank ('14-18)"}
+        ]
+      }
     }
   }

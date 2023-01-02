@@ -1,94 +1,85 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": " ",
     "title": {
-      "text": "Relationship between R&D expenditure and 'High-Tech' Exports", 
-      "subtitle": ["{ * = 3-year Avg; 2015,2017,2019.  ** =  Exports data is from 2020.  *** = At constant US$ }" , " ", "Source: World Bank"],
-      "fontSize": 15, "subtitleFontStyle": "italic", "subtitleFontSize": 11,
-      "color": "black","anchor": "middle"
-  
+      "text": "Changes in Research and Development expenditure since '09",
+      "subtitle": [
+        "As a Percentage of GDP. Tooltip included.  Source: World Bank",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11.2,
+      "fontSize": 14,
+      "anchor": "center",
+      "color": "black"
     },
-    "height": 300, "width": 350,
-  "config": { "padding": { "top": 10, "bottom": 8, "left": 8, "right": 5}, 
-  "background": "white", "view": {"stroke": "transparent"}
+    "height": 320,
+    "width": 355,
+      "config": {
+      "padding": {"top": 10, "bottom": 6, "left": 8, "right": 3},
+      "background": "white"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/RnD_WB2.json"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "scale": {"domain": ["2009", "2019"]},
+        "title": null,
+        "axis": {
+          "grid": true,
+          "labelAngle": 30,
+          "labelFontSize": 11.2
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "R&D (% of GDP)",
+  "axis": {"grid": false,"titleFontSize": 14, "labelFontSize": 11,
+          "tickMinStep": 1}
   },
-    "data": { "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/Innovation_Spend_cleaned_FINAL.csv", "format": {"type": "csv"}
-    },
+      "color": {
+          "field": "country.value",
+          "type": "nominal",
+          "legend": {"title": null, "orient":  "right",
+          "symbolSize": 150},
+        "scale": {"scheme": "plasma"}
+  },
+        "tooltip": [
+            {"field": "country.value", "type": "nominal", "title": "Country"},
+            {"field": "date", "type": "temporal", "title": "Date"},
+            {"field": "value",
+            "type": "quantitative",
+            "title": "R&D (% of GDP)"
+            }
+        ]
+  
+        },
     "layer": [
-      {
-        "mark": {"type": "circle", "color": "blueviolet", "opacity": 0.7},
-        "encoding": {
-          "x": {
-            "field": "R&D as % of GDP (2015-2017-2019 Average)",
-            "type": "quantitative", "title": "R&D as % of GDP (3-year Average)*",
-    "axis": {
-      "titleFontSize": 11
-    }
-  },
-          "y": {
-            "field": "High-technology exports (as % of manufactured exports, 2020)",
-            "type": "quantitative", "title": "High-Tech exports (% of manufactured exports)**",
-    "axis": {
-      "titleFontSize": 11
-    }
-  },
-  "size": {
-    "field": "High-technology exports (in Thousands, at current US$, 2020)",
-    "type": "quantitative",
-    "title": "High-Tech Exports*** ('000s)",
-    "scale": {"rangeMax": 4500},
-    "legend": {
-      "title": "High-Tech Exports ('000s)***",
-      "orient": "right",
-              "labelFontSize": 9,
-              "titleFontSize": 10
-    }
-  },
-          "tooltip": [
-            {"field": "Country", "type": "nominal", "title": "Country"},
-            {"field": "R&D as % of GDP (2015-2017-2019 Average)",
-              "type": "quantitative", "title": "R&D as % of GDP (3-Year Avg.*)",
-              "format": ".2f"},
-            
-            {"field": "High-technology exports (as % of manufactured exports, 2020)",
-              "type": "quantitative", "title": "High-Tech Exports (% of mfg. exports)",
-              "format": ".0f"},
-  
-            {"field": "High-technology exports (in Thousands, at current US$, 2020)",
-              "type": "quantitative", "title": "High-Tech exports ('000s, current US$)",
-              "format": ","}
+        {"mark": "line"},
+        {
+          "encoding": {
+            "x": {"aggregate": "max", "field": "date"},
+            "y": {"aggregate": {"argmax": "date"},   "field": "Value"}
+        },
+      "layer": [
+          {"mark": {"type": "circle"}},
+        {
+          "mark": {"type": "text", "align": "left"},
+          "encoding": {
+                "text": {
+                  "field": "country.value",
+                  "type": "nominal",
+                  "title": "Country"
+                }
+              }
+            }
           ]
         }
-      },
-      {
-        "mark": {"type": "line", "color": "red"},
-        "transform": [
-          {"regression": "High-technology exports (as % of manufactured exports, 2020)",
-            "on": "R&D as % of GDP (2015-2017-2019 Average)"
-          }
-        ],
-        "encoding": {
-          "x": {
-            "field": "R&D as % of GDP (2015-2017-2019 Average)",
-            "type": "quantitative"
-          },
-          "y": {"field": "High-technology exports (as % of manufactured exports, 2020)", "type": "quantitative"}
-        }
-      },
-      {
-        "transform": [
-          {"regression": "High-technology exports (as % of manufactured exports, 2020)",
-            "on": "R&D as % of GDP (2015-2017-2019 Average)",
-            "params": true},
-          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
-        ],
-        "mark": {
-          "type": "text", "color": "firebrick",
-          "x": 300, "align": "right", "y": 30,
-      "fontSize": 15
-            },
-        "encoding": {"text": {"type": "ordinal", "field": "R2"}}
-      }
-      
-      
-    ]
+      ]    
   }
+  

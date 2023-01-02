@@ -141,7 +141,7 @@ p{
 
 }
 
-#Chart2{
+#Chart3{
   margin: 0 auto;
   width: 570px;
 
@@ -196,6 +196,11 @@ p{
     }
     
     #Chart2{
+      margin: 0 auto;
+      width:auto;
+    
+    }
+    #Chart3{
       margin: 0 auto;
       width:auto;
     

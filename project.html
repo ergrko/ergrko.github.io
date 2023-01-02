@@ -64,20 +64,26 @@
         <p>---------------------------------------------------------------</p>
         <h4>Global Innovation; Trends during the last 10 years. </h4>
         <div class="chart" id="Chart1" ></div>
+        <br><br><br>
+        <div class="chart" id="Chart2" ></div>
+
         <br><br>
         <h4>Findings</h4>
         <p>This Chloropleth Map shows...., the index covers a wide range of factors such as..... You can use the scale to change the year that is displayed.  
             Clearly, the continents/countries with the highest innovation rankings were .............</p>
+        <p>I also decided to visualise the changes in R&D expenditure (as a % of GDP) for 9 prominent countries. The line chart shows that.... Clearly, most of the selected countries followed similar trajectories as their GII scores, with..... However, there were notable anomalies such as Norway and Belgium who saw declines in their GII score despite large increases in R&D investment (as % of GDP).....</p>
+        <p>Thus the relationship between expenditures aiming to bolster innovation, and the actual output produced from this investment needs to be analysed.....</p>
         
             <h4>The Data; Approach, Cleaning & Challenges </h4>
         <p>I chose this measure because........... I chose this type of visualisation due to maps having the benefit of......</p>
         <p>The main challenges/difficulties I faced constructing this visualisation were..........</p>
         <p>Here is the link to the data --> https://www.globalinnovationindex.org/analysis-indicator . Here is the link to the colab where I cleaned the data --> https://colab.research.google.com/drive/1sLdkX6TKyFB0r3nvRLfqAfsDcrNoQxM1#scrollTo=wALB_Y6DLy9U .</p>
+        <p> Here is a link to the World Bank data --> https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS  . Here is the link to the colab where I downloaded the data using the World Bank's API links, by using a loop. ---> https://colab.research.google.com/drive/1B0hANv_VBIWGIV1Zy2pcorhmyEAljMPi#scrollTo=sgTW_H1YJ7ye  </p>
         <p>---------------------------------------------------------------</p>
         
         
         <h4>Assessing the relationship between Innovative Spend and Output</h4>
-        <div class="chart" id="Chart2" ></div>
+        <div class="chart" id="Chart3" ></div>
         <br><br>
         <h4>Findings</h4>
         <p>To assess this relationship, I chose the use data on the......Evidently, this plot shows that.......</p>
@@ -102,7 +108,7 @@
         <br><br>
         <p>Evidently, this plot shows that.......   </p>
 
-        <div class="chart" id="Chart5" ></div>
+        <div class="chart" id="Chart6" ></div>
         <p>Surprisingly, UK ( a high scorer in the GII) ranked poorly in these rankings (19th to 22nd from 09-13 to 14-18)</p>
         <h4>The Data; Approach, Cleaning & Challenges</h4>
         <p>I chose this measure because......I chose this visualisation because......</p>
@@ -113,7 +119,7 @@
         <p>---------------------------------------------------------------</p>
 
         <h4>Going Foward; Considering the 'Talent'</h4>
-        <div class="chart" id="Chart6" ></div>
+        <div class="chart" id="Chart7" ></div>
         <br><br>
         <h4>Findings</h4>
         <p>The future labour force/next generation is a direct determinant of a country's innovative outputs. To help predict the trajectories for the most innovative nations, I chose to use data on the......Considering nations with at least 1 Top100 university, all these are near the top end of the GII measure for 2022 (First chart). This plot shows that.......</p>
@@ -164,9 +170,11 @@
     //Define charts:
     var myChart1 = "PROJECT_chart1.json";
     var myChart2 = "PROJECT_chart2.json";
+    var myChart3 = "PROJECT_chart3.json";
 
-    var myChart5 = "PROJECT_chart5.json";
+
     var myChart6 = "PROJECT_chart6.json";
+    var myChart7 = "PROJECT_chart7.json";
 
 
 
@@ -174,9 +182,11 @@
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+
     
-    vegaEmbed('#Chart5', myChart5);
     vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
 
 
 
