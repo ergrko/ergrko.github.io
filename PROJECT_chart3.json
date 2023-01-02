@@ -7,21 +7,21 @@
       " ",
       "Source: World Bank"
     ],
-    "fontSize": 15,
+    "fontSize": 14,
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "color": "black",
-    "anchor": "middle"
+    "anchor": "center"
   },
-  "height": 300,
-  "width": 350,
+  "height": 320,
+  "width": 310,
   "config": {
     "padding": {"top": 10, "bottom": 8, "left": 8, "right": 5},
     "background": "white",
     "view": {"stroke": "transparent"}
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/Innovation_Spend_cleaned_FINAL.csv",
+    "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/Innovation_Spend_cleaned_FINAL.csv", 
     "format": {"type": "csv"}
   },
   "layer": [
@@ -32,7 +32,7 @@
           "field": "R&D as % of GDP (2015-2017-2019 Average)",
           "type": "quantitative",
           "title": "R&D as % of GDP (3-year Average)*",
-          "axis": {"titleFontSize": 11}
+          "axis": {"titleFontSize": 11,"tickMinStep": 1}
         },
         "y": {
           "field": "High-technology exports (as % of manufactured exports, 2020)",
@@ -76,7 +76,7 @@
       }
     },
     {
-      "mark": {"type": "line", "color": "red"},
+      "mark": {"type": "line", "color": "forestgreen"},
       "transform": [
         {
           "regression": "High-technology exports (as % of manufactured exports, 2020)",
@@ -105,11 +105,12 @@
       ],
       "mark": {
         "type": "text",
-        "color": "firebrick",
+        "color": "forestgreen",
         "x": 300,
         "align": "right",
         "y": 30,
-        "fontSize": 15
+        "fontSize": 15,
+        "fontWeight":"bold"
       },
       "encoding": {"text": {"type": "ordinal", "field": "R2"}}
     }

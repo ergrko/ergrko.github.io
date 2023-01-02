@@ -1,0 +1,96 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/innVSres_FINAL.csv"
+    },
+    "title": {
+      "text": "Relationship between R&D expenditure and Research output",
+      "subtitle": [
+        " { * = 3-year Avg; 2015,2017,2019. ** = per-million-population. }","" , "Source: SJR, World Bank"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11.2, "fontSize": 14,
+      "anchor": "center",
+      "color": "black"
+    },
+    "width": 400,"height": 320,
+      "config": {
+      "padding": {"top": 10, "bottom": 8, "left": 8, "right": 5},
+      "background": "white",
+      "view": {"stroke": "transparent"}
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "color": "blueviolet",
+          "filled": false,
+          "opacity": 0.9,
+          "size": 50,
+          "tooltip": true
+        },
+        "encoding": {
+          "x": {
+            "field": "rnd (% of GDP 3-yr avg)",
+            "type": "quantitative",
+            "title": "R&D as % of GDP (3-year Average)*",
+            "axis": {"titleFontSize": 11.5,"tickMinStep": 1}
+  
+          },
+          "y": {
+            "field": "docs_per_pop_mln",
+            "type": "quantitative",
+            "title": "Scientific publications (ppm**)",
+            "axis": {"titleFontSize": 11.5}
+  
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {
+              "field": "docs_per_pop_mln",
+              "type": "nominal",
+              "title": "Scientific pub. (ppm)"
+            },
+            {
+              "field": "rnd (% of GDP 3-yr avg)",
+              "type": "nominal",
+              "title": "R&D as % of GDP (avg*)"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "forestgreen", "interpolate": "linear"},
+        "transform": [
+          {"regression": "rnd (% of GDP 3-yr avg)", "on": "docs_per_pop_mln", "extent": [0, 5]}
+        ],
+        "encoding": {
+          "x": {
+            "field": "rnd (% of GDP 3-yr avg)",
+            "type": "quantitative",
+            "axis": {"grid": true}
+          },
+          "y": {
+            "field": "docs_per_pop_mln",
+            "type": "quantitative",
+            "axis": {"grid": true}
+          }
+        }
+      },
+      {
+        "transform": [
+          {"regression": "rnd (% of GDP 3-yr avg)", "on": "docs_per_pop_mln", "params": true},
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "forestgreen",
+          "x": 370,
+          "align": "right",
+          "y": 20,
+          "fontSize": 15,
+          "fontWeight": "bold"
+        },
+        "encoding": {"text": {"type": "nominal", "field": "R2"}}
+      }
+    ]
+  }
