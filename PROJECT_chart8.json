@@ -1,0 +1,107 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/DEGREEvsENTRE_FINAL.csv"
+    },
+    "title": {
+      "text": "Relationship between Higher Education and Entrepreneurship ('GEI')",
+      "subtitle": [
+        "Max GEI Index Score = 100. Education data considers 25+ age group. ",
+        "",
+        "Source: GEDI, World Bank"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11.2,
+      "fontSize": 14,
+      "anchor": "center",
+      "color": "black"
+    },
+    "width": 380,
+    "height": 320,
+    "config": {
+      "padding": {"top": 10, "bottom": 8, "left": 2, "right": 5},
+      "background": "white",
+      "view": {"stroke": "transparent"}
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "color": "blueviolet",
+          "filled": true,
+          "opacity": 0.9,
+          "size": 50,
+          "tooltip": true
+        },
+        "encoding": {
+          "x": {
+            "field": "percent_pop_masters (2016)",
+            "type": "quantitative",
+            "title": "Population with at least Master's degree or equivalent (% , 2016)",
+            "axis": {"titleFontSize": 11, "tickMinStep": 1}
+          },
+          "y": {
+            "field": "GEI (2018)",
+            "type": "quantitative",
+            "title": "GEI Score (2018)",
+            "axis": {"titleFontSize": 11.4}
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {
+              "field": "GEI (2018)",
+              "type": "nominal",
+              "title": "GEI Score "
+            },
+            {
+              "field": "percent_pop_masters (2016)",
+              "type": "nominal",
+              "title": "Population with at least Master's degree (%)"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "forestgreen", "interpolate": "linear"},
+        "transform": [
+          {
+            "regression": "percent_pop_masters (2016)",
+            "on": "GEI (2018)",
+            "extent": [25, 90]
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "percent_pop_masters (2016)",
+            "type": "quantitative",
+            "axis": {"grid": true, "labelFontSize": 11.2}
+          },
+          "y": {
+            "field": "GEI (2018)",
+            "type": "quantitative",
+            "axis": {"grid": true, "labelFontSize": 11.2}
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "regression": "percent_pop_masters (2016)",
+            "on": "GEI (2018)",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "forestgreen",
+          "x": 370,
+          "align": "right",
+          "y": 20,
+          "fontSize": 15,
+          "fontWeight": "bold"
+        },
+        "encoding": {"text": {"type": "nominal", "field": "R2"}}
+      }
+    ]
+  }
