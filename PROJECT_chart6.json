@@ -1,78 +1,58 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/BUS_ENV_scrape_cleaned.csv"
-    },
     "title": {
-      "text": "'Business Environment Rankings' (BER) for two time periods",
-      "subtitle": [ "Max Index value = 10. Covers two periods; 2009-2013, 2014-2018. " , "", "*Tool-tip includes ranking for that period. Source: The Economist" , ""],
+      "text": "Comparing trends in Venture Capital Investments",
+      "subtitle": ["","% Change in V.C Investment level from 2 Years previous. Constant prices, US$. Source: OECD." ,""],
       "subtitleFontStyle": "italic",
-       "fontSize": 14.5, 
-      "subtitleFontSize": 11.2,
-      "anchor": "center",
-      "color": "#000000",
-      "subtitleColor": "#000000"
+      "subtitleFontSize": 12.5, "fontSize":15.5,
+      "anchor": "middle",
+      "color": "black"
     },
-    "height": 350,
-    "width": 280,
-    "config": { "padding": { "top": 10}, 
-    "background": "white", 
-    "view": {"stroke": "transparent"}},
-    "repeat": {"layer": ["2009-2013", "2014-2018"]},
-    "spec": {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "Country",
-          "type": "nominal",
-          "title": null,
-          "axis": {
-            "grid": false,
-            "gridColor": "black"
-          }
-        },
-        "x": {
-          "field": {"repeat": "layer"},
-          "type": "quantitative",
-          "title": "BER Score",
-          "axis": {
-            "grid": false,
-            "domainColor": "#000000",
-            "labelColor": "#000000",
-            "tickColor": "#000000",
-            "gridColor": "black",
-            "titleColor": "#000000"
-          }
-        },
-        "color": {
-          "datum": {"repeat": "layer"},
-          "title": "Time Period",
-          "scale": {"range": ["#87CEEB", "#4169E1"]},
-          "legend": {
-            "orient": "bottom",
-            "fillColor": "#ffffff",
-            "labelColor": "#000000"
-          }
-        },
-        "yOffset": {"datum": {"repeat": "layer"}},
-        "tooltip": [
-            {"field": "Country", "type": "nominal", "title": "Country"},
-    
-            {"field": "2009-2013",
-              "type": "quantitative",
-              "title": "BER Score ('09-13)"},
-    
-            {"field": "Global Rank (2009-13)",
-              "type": "quantitative",
-              "title": "Global Rank ('09-13)"},
-    
-            {"field": "2014-2018",
-              "type": "quantitative",
-              "title": "BER Score ('14-18)"},
-    
-            {"field": "Global Rank (2014-18)", "type": "quantitative", 
-            "title": "Global Rank ('14-18)"}
+    "data": {
+      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/VC_cleaned.csv"
+    },
+    "height": 135,
+    "width": 160,
+    "mark": {"type": "line", "strokeWidth": 1.4},
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": true, "labelAngle": 30,"labelFontSize": 12}
+      },
+      "y": {"field": "2 yr % Change", "type": "quantitative", "title": "2-Year % Change"},
+      "facet": {
+        "field": "Country",
+        "columns": 3,
+        "title": null,
+        "header": {
+          "titleColor": "black",
+          "labelColor": "black",
+          "labelFontSize": 14
+        }
+      },
+      "color": {
+        "value": "black",
+        "condition": [
+          {"test": "datum.Country =='Denmark'", "value": "firebrick"},
+          {"test": "datum.Country =='Finland'", "value": "mediumslateblue"},
+          {"test": "datum.Country =='France'", "value": "darkblue"},
+          {"test": "datum.Country =='Germany'", "value": "gold"},
+          {"test": "datum.Country =='Japan'", "value": "crimson"},
+          {"test": "datum.Country =='Korea'", "value": "darkslateblue"},
+          {"test": "datum.Country =='Netherlands'", "value": "darkorange"},
+          {"test": "datum.Country =='Norway'", "value": "darkred"},
+          {"test": "datum.Country =='Sweden'", "value": "yellow"},
+          {"test": "datum.Country =='Switzerland'", "value": "red"},
+          {"test": "datum.Country =='United Kingdom'", "value": "red"},
+          {"test": "datum.Country =='United States'", "value": "darkblue"}
         ]
-      }
-    }
+      },
+      "tooltip": [
+        {"field": "2 yr % Change", "type": "quantitative", "title": "2-Year % Change"},
+        {"field": "Year", "type": "temporal", "title": "Year"}
+      ]
+    },
+    "resolve": {"scale": {"y": "independent"}}
   }
