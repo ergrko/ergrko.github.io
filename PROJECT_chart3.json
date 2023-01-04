@@ -3,7 +3,7 @@
   "title": {
     "text": "Relationship between R&D expenditure and 'High-Tech' Exports",
     "subtitle": [
-      "{ * = 3-year Avg; 2015,2017,2019.  ** =  Exports data is from 2020.  *** = At constant US$ }",
+      "{ * = 3-year Avg; 2015,2017,2019 /  ** =  exports data is from 2020 /  *** = at current US$ }",
       " ",
       "Source: World Bank"
     ],
@@ -14,14 +14,14 @@
     "anchor": "center"
   },
   "height": 320,
-  "width": 310,
+  "width": 300,
   "config": {
-    "padding": {"top": 10, "bottom": 8, "left": 8, "right": 5},
+    "padding": {"top": 10, "bottom": 8, "left": 8, "right": 1},
     "background": "white",
     "view": {"stroke": "transparent"}
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/Innovation_Spend_cleaned_FINAL.csv", 
+    "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/Innovation_Spend_cleaned_FINAL.csv",
     "format": {"type": "csv"}
   },
   "layer": [
@@ -32,7 +32,7 @@
           "field": "R&D as % of GDP (2015-2017-2019 Average)",
           "type": "quantitative",
           "title": "R&D as % of GDP (3-year Average)*",
-          "axis": {"titleFontSize": 11,"tickMinStep": 1}
+          "axis": {"titleFontSize": 11, "tickMinStep": 1}
         },
         "y": {
           "field": "High-technology exports (as % of manufactured exports, 2020)",
@@ -41,12 +41,12 @@
           "axis": {"titleFontSize": 11}
         },
         "size": {
-          "field": "High-technology exports (in Thousands, at current US$, 2020)",
+          "field": "high_tech_exports_in_blns",
           "type": "quantitative",
-          "title": "High-Tech Exports*** ('000s)",
+          "title": "High-Tech Exports*** (blns)",
           "scale": {"rangeMax": 4500},
           "legend": {
-            "title": "High-Tech Exports ('000s)***",
+            "title": "High-Tech Exports (blns)***",
             "orient": "right",
             "labelFontSize": 9,
             "titleFontSize": 10
@@ -67,9 +67,9 @@
             "format": ".0f"
           },
           {
-            "field": "High-technology exports (in Thousands, at current US$, 2020)",
+            "field": "high_tech_exports_in_blns",
             "type": "quantitative",
-            "title": "High-Tech exports ('000s, current US$)",
+            "title": "High-Tech Exports (blns, current US$)",
             "format": ","
           }
         ]
@@ -110,7 +110,7 @@
         "align": "right",
         "y": 30,
         "fontSize": 15,
-        "fontWeight":"bold"
+        "fontWeight": "bold"
       },
       "encoding": {"text": {"type": "ordinal", "field": "R2"}}
     }
