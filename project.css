@@ -72,7 +72,7 @@ margin-top: 1em ;
 }
 
 
-/* Choose the appearance of the tags, h1, h3 and p: */
+/* Choose the appearance of the tags, h1 to h5 and p: */
 h1{
     color:black;
     font-family: 'Allerta Stencil', sans-serif;
@@ -83,32 +83,39 @@ h1{
 h2{
   color:black;
   font-family: 'Work Sans', sans-serif;
-  font-size: 70px;
   text-align: center;
-  margin: 20px 0px;
+  font-size: 35px;
 
 
 }  
 
 h3{
   color:black;
-font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 70px;
   text-align: center;
-  font-size: 30px;
+  margin: 20px 0px;
 }
 
 h4{
   color: black;
   font-family: 'Work Sans', sans-serif;
   text-align: center;
-  font-size: 30px;
+  font-size: 32px;
+}
+
+h5{
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  font-size: 26px;
 }
 
 p{
   color:rgb(17, 17, 17);
   font-family: 'Work Sans', sans-serif;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   max-width: 70%;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -213,42 +220,32 @@ p{
     }
     
     h1{
-  font-size: 32px;
-  
-    }
-  
-    h2{
-      color:black;
-      font-family: 'Work Sans', sans-serif;
-      font-size: 29px;
-      text-align: center;
-      margin: 10px 0px;
+      font-size: 32px;
+  }
+  h2{
+    font-size: 20px;
   
   
   }  
   
   h3{
-      color:black;
-      font-family: 'Work Sans', sans-serif;
-      text-align: center;
-      font-size: 22px;
+    font-size: 34px;
+    margin: 10px 0px;
   }
   
   h4{
-      color: black;
-      font-family: 'Work Sans', sans-serif;
-      text-align: center;
-      font-size: 19px;
+    font-size: 19px;
+  }
+  
+  h5{
+    font-size: 15px;
   }
   
   p{
-      color:rgb(17, 17, 17);
-      font-family: 'Work Sans', sans-serif;
-      text-align: center;
-      font-size: 15px;
-      max-width: 75%;
-      margin: 0 auto;
-      margin-bottom: 20px;
+    font-size: 14px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
   
   }
   .TOP_NAV a {

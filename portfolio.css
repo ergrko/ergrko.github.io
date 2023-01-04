@@ -323,20 +323,32 @@ p{
   font-size:10px;
 }
 
+
+
+
 /*
 
-.BUTTON a{
-  width: 30%;
-  margin:20px;
-  margin: auto;  
-}
+  .PAGE_BUTTONS a{
+    width: 25%;
+    margin:20px;
+    margin: auto;  
+
+}  
+
+#link1{
+  font-size: 10px;
+  font-weight: 500;
+  width:fit-content;
+  }
 */
 
 }
 
-  /*  code for buttons (e.g links to colab/website/databases/json/etc  
+  /* 
+  
+  ------------- code for buttons if needed later on .(e.g links to colab/website/databases/json/etc ----------- 
 
-  .BUTTON a{
+.PAGE_BUTTONS a{
     display: block;
     text-align: center;
     width: 15%;
@@ -345,24 +357,24 @@ p{
 
 }  
 
-
 #link1{
-    background-color:black;
-
-    padding:20px;
-    
-    border:1px;
-    border-color:whitesmoke;
-    border-style: solid;
-    border-radius: 10px;
-
-    font-family: 'Work Sans', sans-serif;
-    font-weight:700;
-    color:white;
-    
-    text-decoration: none;
+background-color: black;
+font-family: 'Work Sans', sans-serif;
+border: 1px;
+border-color: whitesmoke;
+border-style: solid;
+border-radius: 5px;
+color: white;
+padding: 11px 70px;
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+margin: auto;
+opacity: 0.8; 
+transition: 0.35s;
+text-decoration: none;
+cursor: pointer;  
 }
-    
 
 #link1:hover{
 
@@ -371,11 +383,13 @@ p{
     border:2px;
     border-color:darkturquoise;
     border-style: solid;
-    
     color:black;
 
+}
 
 
+
+----------------------------------------------
 
 */
 
