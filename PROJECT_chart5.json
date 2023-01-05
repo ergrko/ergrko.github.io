@@ -4,7 +4,7 @@
       "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/BUS_ENV_scrape_cleaned.csv"
     },
     "title": {
-      "text": "'Business Environment Rankings' (BER) for two time periods",
+      "text": "Figure 5; 'Business Environment Rankings' (BER) for two time periods",
       "subtitle": [ "Max Index value = 10. Covers two periods; 2009-2013, 2014-2018. " , "", "*Tool-tip includes ranking for that period. Source: The Economist" , ""],
       "subtitleFontStyle": "italic",
        "fontSize": 14.5, 

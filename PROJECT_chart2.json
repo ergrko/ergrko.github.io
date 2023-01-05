@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": " ",
     "title": {
-      "text": "Changes in Research and Development expenditure since '09",
+      "text": "Figure 2; Changes in Research and Development expenditure since '09",
       "subtitle": [
         "As a Percentage of GDP. Tooltip included.  Source: World Bank",
         ""

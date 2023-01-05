@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Relationship between R&D expenditure and 'High-Tech' Exports",
+    "text": "Figure 3; Relationship between R&D expenditure and 'High-Tech' Exports",
     "subtitle": [
       "{ * = 3-year Avg; 2015,2017,2019 /  ** =  exports data is from 2020 /  *** = at current US$ }",
       " ",

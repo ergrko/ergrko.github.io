@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-      "text": "Comparing trends in Venture Capital Investments",
+      "text": "Figure 6; Comparing trends in Venture Capital Investments",
       "subtitle": ["","% Change in V.C Investment level from 2 Years previous. Constant prices, US$. Source: OECD." ,""],
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 12.5, "fontSize":15.5,

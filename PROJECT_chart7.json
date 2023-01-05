@@ -12,7 +12,7 @@
     "view": {"stroke": "transparent"}
   },
   "title": {
-    "text": "Number of Universities in Top 1000 by Country",
+    "text": "Figure 7; Number of Universities in Top 1000 by Country",
     "subtitle": "2021 Edition. Source: Webometrics Ranking of World Universities (CSIC)",
     "fontSize": 15,
     "subtitleFontStyle": "italic",
