@@ -1,22 +1,22 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "description": "Creates year variable, then defined parameters on this and adds sliders.",
+    "description": "Year variable is created, includes sliders for the start and end year.",
 
     "title": {
-        "text": "Inflation - US",
-        "subtitle": "All items, FRED series: CPIAUCSL_PC1",
+        "text": "Inflation in the US",
+        "subtitle": "All items, covers data between 1963-2022. Source: FRED",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
-        "anchor": "start",
+        "anchor": "middle",
         "color": "black"},
 
-    "width":300,
-    "height":300,
+    "width":290,
+    "height":290,
 
     "mark":{
         "type": "line",
-        "color":"rgb(0,112,192)",
+        "color":"blueviolet",
         "strokeWidth":2,
         "opacity":1},
 

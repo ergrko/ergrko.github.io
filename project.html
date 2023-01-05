@@ -63,69 +63,67 @@
         <br>
         <hr style="color: black; border-style: groove; background-color: mediumturquoise;">
         <h4>Aims of Project</h4>
-        <p>Innovation is a vital factor in driving economic growth and competitiveness. As the world changes rapidly, it is essential for countries to stay ahead through innovation. This project aims to understand the trends in innovation over the past decade and to identify the key drivers of innovation in successful countries.</p>
-        <p>By analysing this data, I hope to better understand the mechanisms behind strong innovation ecosystems.</p>
+        <p>Innovation is vital for economic growth and competitiveness. As the world changes rapidly, it is essential for countries to stay ahead through innovation. This project aims to understand the recent trends in innovation and to identify the key drivers of innovation in successful countries.</p>
+        <p>Through this project, I hope to better understand the mechanisms behind strong innovation ecosystems.</p>
         <br>
         <hr style="color: black; border-style: groove; background-color: mediumturquoise;">
         <h4>Global Innovation; Trends during the last 10 years. </h4>
         <br><p>The <a href="https://www.globalinnovationindex.org/analysis-indicator">'Global Innovation Index' (GII)</a> uses a wide range of indicators to measure a country's innovation performance. 
-            By cleaning the data in <a href="https://colab.research.google.com/drive/1sLdkX6TKyFB0r3nvRLfqAfsDcrNoQxM1#scrollTo=O7I5tcEEMrIf">Python</a>, I created a map visualization showing the global trends in GII scores.</p>
+            After downloading/cleaning the data in <a href="https://colab.research.google.com/drive/1sLdkX6TKyFB0r3nvRLfqAfsDcrNoQxM1#scrollTo=O7I5tcEEMrIf">Python</a>, I created a map visualization showing the global trends in the index.</p>
         <br><div class="chart" id="Chart1" ></div>
         <br><br><br>
-        <p>Figure1; The strongest innovation ecosystems are primarily in North America, East-Asia and Europe, with Switzerland ranked first. Some of the notable risers were China (44.7 to 55.3), USA, South Korea and Germany. However, some previously high-ranked countries saw declines (e.g Canada, Scandinavia).</p>
-        <p>To examine the relationship between innovation spending and GII scores, I used a loop on <a href="https://colab.research.google.com/drive/1B0hANv_VBIWGIV1Zy2pcorhmyEAljMPi#scrollTo=sgTW_H1YJ7ye">Python</a> to batch download <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">World Bank</a> API links on R&D expenditure changes (as a % of GDP).</p>
+        <p>The strongest innovation ecosystems are primarily in North America, East-Asia and Europe, with Switzerland ranked first. The notable risers were China (44.7 to 55.3), USA, South Korea and Germany, with some previously high-ranked countries seeing declines (e.g Canada, Scandinavia).</p>
+        <p>To examine the relationship between innovation spending and GII scores, I used a loop on <a href="https://colab.research.google.com/drive/1B0hANv_VBIWGIV1Zy2pcorhmyEAljMPi#scrollTo=sgTW_H1YJ7ye">Python</a> to batch download <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">World Bank</a> API links on R&D expenditure data (as percentages of GDP).</p>
         <br><div class="chart" id="Chart2" ></div>
-        <br><br><br><p>Figure2; R&D expenditure followed GII scores, with those who saw GII rises showing increases in R&D (China, USA, South Korea), and vice versa for those who saw GII falls (Finland, UK). Belgium and Norway were exceptions, with R&D increases corresponding with declining GII scores, thus the relationship between innovation spending and its output requires further analysis.</p>
+        <br><br><br><p>Figure2 shows R&D expenditure followed GII scores, with those who saw GII rises showing R&D increases (China, USA, Korea), and those who saw GII falls seeing stagnant R&D (Finland, UK). For Belgium and Norway, R&D increases corresponded with declining GII scores, thus the relationship between innovation spending and its output requires further analysis.</p>
         <br><br>
         <hr style="color: black; border-style: groove; background-color: mediumturquoise;">
         
         
         <h4>Assessing the relationship between Innovative Spend and Output</h4>
-        <br><p>To account for the lag between R&D expenditure and output, I used <a href="https://colab.research.google.com/drive/1Cqkypr2iuAi2MmNDzIPPwVzngpk3dQtM#scrollTo=XJAonHBQalhS">Python</a> to construct a three-year average of <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">R&D expenditure</a> for each country. First, I merged this statistic with World Bank data on <a href="https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS">‘High-Tech’ exports (% of total exports)</a> to help create a bubble chart, with the bubble size indicating <a href="https://data.worldbank.org/indicator/TX.VAL.TECH.CD">exports in current US$</a>.</p>
-        <p>Second, I <a href="https://colab.research.google.com/drive/1RyCGKE9ou_3yjsZwfdVGB-FUoa0H5hdx">scraped</a> data on scientific publications from <a href="https://www.scimagojr.com/countryrank.php?year=2021&order=it&ord=desc">ScimagoJR</a>. To account for population size, I used <a href="https://data.worldbank.org/indicator/SP.POP.TOTL?most_recent_value_desc=true">World Bank</a> population data to construct a 'publications-per-million' (PPM) statistic.</p>
+        <br><p>To account for the lag between R&D expenditure and output, I used <a href="https://colab.research.google.com/drive/1Cqkypr2iuAi2MmNDzIPPwVzngpk3dQtM#scrollTo=XJAonHBQalhS">Python</a> to construct a three-year average of <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">R&D expenditure</a> for each country. First, I merged this statistic with World Bank data on ‘High-Tech’ exports (<a href="https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS">in percentages</a>, and <a href="https://data.worldbank.org/indicator/TX.VAL.TECH.CD">current US$</a>).</p>
+        <p>Second, I <a href="https://colab.research.google.com/drive/1RyCGKE9ou_3yjsZwfdVGB-FUoa0H5hdx">scraped</a> data on scientific publications from <a href="https://www.scimagojr.com/countryrank.php?year=2021&order=it&ord=desc">ScimagoJR</a>. To account for population size, I used <a href="https://data.worldbank.org/indicator/SP.POP.TOTL?most_recent_value_desc=true">World Bank</a> population data to construct a 'publications-per-million' (PPM) statistic. Then, I regressed R&D expenditure on each innovative output, to create bubble and scatter charts. I found positive correlations for both regressions. </p>
         <br><div class="chart" id="Chart3" ></div>
         <br><br><br>
         <div class="chart" id="Chart4" ></div>
-        <br><br><p>By regressing R&D expenditure on these forms of innovative output, I found positive correlations for both regressions.</p>
-        <p>Figure3; The East-Asian powerhouses outperformed their western counterparts, with China (e.g) having higher ‘High-Tech’ export percentages than the US, despite spending a lower percentage of GDP on R&D.</p>
-        <p>Figure4; R2 statistic of 0.32 suggests 32% of the ‘PPM’ variation is explained by R&D expenditure. Switzerland had a notably high ‘PPM’ value and R&D statistic, which may explain its top GII rankings. </p>
-        <p>Both charts demonstrate that innovation spending has a positive impact on innovative outputs.</p>
+        <br><br><p>Figure3 shows how East-Asia outperforms the West, with China (e.g) having higher ‘High-Tech’ export percentages than the US, despite spending a lower percentage of GDP on R&D. </p>
+        <p>Figure4’s R2 statistic of 0.32 suggests 32% of the ‘PPM’ variation is explained by R&D expenditure. Notably, Switzerland has a high ‘PPM’ value and R&D statistic, which may explain its top GII rankings. </p>
+        <p>Both charts demonstrate that innovation spending has positive impacts on innovative outputs.</p>
         <br><br>
         <hr style="color: black; border-style: groove; background-color: mediumturquoise;">
 
         <h4>The Ease of Innovation</h4>
-        <br><p>To understand the ease of innovation in different countries, I <a href="https://colab.research.google.com/drive/1DYIuOBryvv_Jx4aJ3Nszx4nGXYg57dGG#scrollTo=GHEWJulJSN-M">scraped</a> data from the Economist's <a href="https://www.iberglobal.com/files/business_climate_eiu.pdf">'Business Environment Rankings'</a>. This measure considers various factors influencing business decisions (e.g competition, taxes etc). The chart shows the changes in BER ranks/scores for the 12 highest ranking countries over two periods in the 2010s decade. </p>
+        <br><p>To understand the ease of innovation in different countries, I <a href="https://colab.research.google.com/drive/1DYIuOBryvv_Jx4aJ3Nszx4nGXYg57dGG#scrollTo=GHEWJulJSN-M">scraped</a> data from the Economist's <a href="https://www.iberglobal.com/files/business_climate_eiu.pdf">'Business Environment Rankings'</a>. This measure considers various factors influencing business decisions (e.g competition, taxes etc). Figure5 shows the changes in BER scores for the 12 highest ranking countries at 2018-end </p>
         <br><div class="chart" id="Chart5" ></div>
         <br><br><br>
-        <p>Figure5; Singapore’s 1st place ranking may explain their strong ‘High-Tech’ export performance (Figure3). Switzerland’s 2nd place rank further validates its high GII ranking (Figure1).</p>
-        <p>Venture Capital covers investment on new ‘high-growth-potential’ businesses. I used <a href="https://stats.oecd.org/Index.aspx?DataSetCode=VC_INVEST#">OECD data</a> to create a trellis chart displaying the trends in V.C for 12 countries. I used <a href="https://colab.research.google.com/drive/1ha5oVSLy7w3K5CRUtTdu9eGALZG-CGlK#scrollTo=xTtEXFlZRaWP">Colab</a> to calculate the 2-year percentage change in VC data, to filter out ‘year-on-year’ fluctuations.</p>
+        <p>Singapore and Switzerland’s Top2 ranks may explain their strong performances in ‘High-Tech’ exports (Figure3) and GII (Figure1), respectively.</p>
+        <p>I used <a href="https://stats.oecd.org/Index.aspx?DataSetCode=VC_INVEST#">OECD data</a> to create a trellis chart displaying the trends in Venture Capital, (investment on new ‘high-growth-potential’ businesses), for 12 countries. I used <a href="https://colab.research.google.com/drive/1ha5oVSLy7w3K5CRUtTdu9eGALZG-CGlK#scrollTo=xTtEXFlZRaWP">Colab</a> to calculate the 2-year percentage change in VC investments, to filter out ‘year-on-year’ fluctuations.</p>
         <br><br>
         <div class="chart" id="Chart6" ></div>
         <br><br>
-        <p>Figures5&6; Countries with strong ‘BER’ scores (Switzerland) or large rank movements (USA) showed large increases in VC. Countries with stagnating ‘BERs’ showed lower VC growth levels (Germany) and even VC declines (Sweden, Finland). </p>
-        <br><p>Overall, the data suggests that healthy business environments may support VC activity and innovation.</p>
+        <p>Figures5&6 together show Countries with strong ‘BER’ scores (Switzerland) or large rank movements (USA) showed large increases in VC. Countries with stagnating ‘BERs’ showed lower VC growth levels (Germany) and even VC declines (Sweden, Finland).</p>
+        <br><p>Overall, the data suggests that healthy business environments support VC activity and innovation.</p>
         <br><br><hr style="color: black; border-style: groove; background-color: mediumturquoise;">
 
         <h4>Going Forward; Considering the 'Talent'</h4>
         <br><p>To assess the talent of different countries, I <a href="https://colab.research.google.com/drive/1ZQ_Zle2UZAYEYmxmDUIYSq6Lcyt_IpLh#scrollTo=zl238mXsrzNK">scraped</a> data from <a href="https://www.webometrics.info/en/distribution_by_country#content">Webometrics</a>, to create a stacked bar chart showing the number of Top1000 universities in countries hosting at least one Top100 university.</p>
         <div class="chart" id="Chart7" ></div>
         <br><br><br>
-        <p>Figure7; The US dominates in terms of the quality and quantity of higher education institutions, with China, UK and Germany following. However, smaller countries such as Switzerland and Netherlands also perform well in the Top100 given their size.</p>
-        <p>Next, I <a href="https://colab.research.google.com/drive/1q4Nk86IMz791xY_NxaFEwiGMIhZbGSzx#scrollTo=pnOhn03fNad5">scraped</a> data on the ‘Global Entrepreneurship Index’ from the <a href="http://thegedi.org/global-entrepreneurship-and-development-index/">GEDI website</a>, and regressed it on the percentage of individuals with a master's degree (<a href="https://data.worldbank.org/indicator/SE.TER.CUAT.MS.ZS?most_recent_value_desc=true">World Bank</a>). </p>
+        <p>Figure7 demonstrates the US’ domination in the quality and quantity of higher education institutions, with China, UK and Germany following. However, smaller countries such as Switzerland and Netherlands also perform well in the Top100 given their size.</p>
+        <p>Next, I <a href="https://colab.research.google.com/drive/1q4Nk86IMz791xY_NxaFEwiGMIhZbGSzx#scrollTo=pnOhn03fNad5">scraped</a> data on the ‘Global Entrepreneurship Index’ from the <a href="http://thegedi.org/global-entrepreneurship-and-development-index/">GEDI website</a>, and regressed it on the percentage of individuals holding master's degrees (<a href="https://data.worldbank.org/indicator/SE.TER.CUAT.MS.ZS?most_recent_value_desc=true">World Bank</a>). </p>
         <br><br><div class="chart" id="Chart8" ></div>
         <br><br>
-        <p>Figure8; Shows a positive correlation between higher-education attainment and entrepreneurship performance within a country, although the R2 statistic of 0.14 suggests a relatively weak relationship. Nevertheless, many countries with high GEI scores and proportions with master's degrees also performed well in the GII (e.g US, Switzerland, Netherlands).</p>
-        <br><p>Overall, these charts suggest the importance of investing in the youth to foster successful innovation.</p><br>
+        <p>Figure8 shows a positive correlation between higher-education attainment and entrepreneurship performance, although the R2 statistic of 0.14 suggests a relatively weak relationship. Nevertheless, many countries with high GEI scores and proportions with master's degrees also performed well in the GII (e.g US, Switzerland, Netherlands).</p>
+        <br><p>Overall, these charts suggest the importance of investing in the youth to nurture innovation.</p><br>
         <br><hr style="color: black; border-style: groove; background-color: mediumturquoise;">
 
         <h4>Concluding Statements</h4>
-        <br><p>This project identified some of the key drivers behind innovation, such as R&D spending, the country’s business environment and education quality. I have highlighted how these factors contribute to the most innovative countries (Switzerland, USA, Singapore).</p>
-        <p>The findings can be used to inform future research on innovation and to identify improvement areas in ambitious countries.</p>
+        <br><p>This project identified some of the key drivers behind innovation, and how these factors contribute to the most innovative countries.</p>
+        <p>The findings can be used to inform future research on innovation and to identify improvement areas for countries.</p>
 
         <h5>Data Cleaning and Challenges</h5>
-        <p>A big challenge was scraping the data from Webometrics. I was blocked from web-scraping using the pandas command 'pd.read_html’, so I used 'Beautiful Soup' to inspect the website's elements and scrape the table. Then, I used 'Tabulate' to convert the scraped data into a csv table and cleaned the data by converting it to long-form using the '.melt' command.</p>
-        <p>A common issue during data cleaning was the mismatch of names between data sources, (e.g for Figures1, 3, 8). I dealt with this by; using the ‘match’ command in Excel to identify the problematic names between two datasets, then the ’.replace’ command in Python to change the names.</p>
-        <p>The issue of missing values (‘NaN’) for some countries primarily affected visualisations using World Bank and OECD data. For instance, I chose the years 2015, 2017 and 2019 for the average R&D statistic (Figures3&4), because it had the least ‘NaN’ values and included the most important countries, such as Switzerland, who only published R&D data every two years.</p>
+        <p>Scraping data from Webometrics proved challenging, as I was blocked from web-scraping using ‘pandas’ (pd.read_html), so I used 'Beautiful Soup' to inspect the website's elements and scrape the table. Then, I used 'Tabulate' to convert the scraped data into table format and converted it to long-form using the '.melt' command. </p>
+        <p>Common issues during data cleaning included mismatched names between data sources  (for Figures1,3,8) and missing values (‘NaN’) for certain countries, which primarily affected World Bank and OECD data. The “match” and “.replace” commands in Excel and Python were used to address these issues. To deal with missing values for the R&D statistic (Figures3&4), the years 2015, 2017, and 2019 were used for the 3-year average due to the low number of missing values and inclusion of important countries such as Switzerland, who only published R&D data every two years.</p>
 
 
     </section> 
