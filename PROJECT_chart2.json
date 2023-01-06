@@ -2,19 +2,19 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": " ",
     "title": {
-      "text": "Figure 2; Changes in Research and Development expenditure since '09",
+      "text": "Figure 2; Trends in R&D expenditure since '09",
       "subtitle": [
-        "As a Percentage of GDP. Tooltip included.  Source: World Bank",
+        "As a Percentage of GDP. Tooltip included.  Source: World Bank API",
         ""
       ],
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 11.2,
       "fontSize": 14,
-      "anchor": "center",
+      "anchor": "middle",
       "color": "black"
     },
     "height": 320,
-    "width": 355,
+    "width": 300,
       "config": {
       "padding": {"top": 10, "bottom": 6, "left": 8, "right": 3},
       "background": "white"
@@ -46,7 +46,7 @@
           "field": "country.value",
           "type": "nominal",
           "legend": {"title": null, "orient":  "right",
-          "symbolSize": 150},
+          "symbolSize": 140},
         "scale": {"scheme": "plasma"}
   },
         "tooltip": [

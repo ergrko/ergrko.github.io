@@ -4,16 +4,16 @@
     "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/UNI_LG_cleaned.csv"
   },
   "mark": "bar",
-  "width": 500,
-  "height": 340,
+  "width": 420,
+  "height": 295,
   "config": {
     "padding": {"top": 6, "bottom": 0, "left": 3, "right": 5},
     "background": "white",
     "view": {"stroke": "transparent"}
   },
   "title": {
-    "text": "Figure 7; Number of Universities in Top 1000 by Country",
-    "subtitle": "2021 Edition. Source: Webometrics Ranking of World Universities (CSIC)",
+    "text": "Figure 7; Number of Top1000 Universities by Country",
+    "subtitle": "2021 Edition. Source: Webometrics (CSIC)",
     "fontSize": 15,
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11.3,
@@ -45,7 +45,7 @@
       "field": "Country",
       "type": "nominal",
       "title": null,
-      "axis": {"grid": false, "labelFontSize": 12}
+      "axis": {"grid": false, "labelFontSize": 11.7}
     },
     "y": {
       "field": "Number of Universities",

@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Figure 3; Relationship between R&D expenditure and 'High-Tech' Exports",
+    "text": "Figure 3; R&D expenditure vs 'High-Tech' Exports",
     "subtitle": [
-      "{ * = 3-year Avg; 2015,2017,2019 /  ** =  exports data is from 2020 /  *** = at current US$ }",
+      "* = 3-year Avg; 2015,2017,2019  ** =  exports data from 2020  *** = current US$",
       " ",
       "Source: World Bank"
     ],
@@ -11,10 +11,10 @@
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "color": "black",
-    "anchor": "center"
+    "anchor": "middle"
   },
   "height": 320,
-  "width": 300,
+  "width": 258,
   "config": {
     "padding": {"top": 10, "bottom": 8, "left": 8, "right": 1},
     "background": "white",
@@ -49,7 +49,7 @@
             "title": "High-Tech Exports (blns)***",
             "orient": "right",
             "labelFontSize": 9,
-            "titleFontSize": 10
+            "titleFontSize": 9
           }
         },
         "tooltip": [
@@ -106,7 +106,7 @@
       "mark": {
         "type": "text",
         "color": "forestgreen",
-        "x": 300,
+        "x": 250,
         "align": "right",
         "y": 30,
         "fontSize": 15,

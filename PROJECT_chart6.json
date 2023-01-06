@@ -11,9 +11,9 @@
     "data": {
       "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/VC_cleaned.csv"
     },
-    "height": 135,
-    "width": 160,
-    "mark": {"type": "line", "strokeWidth": 1.4},
+    "height": 112,
+    "width": 112,
+    "mark": {"type": "line", "strokeWidth": 1.2},
     "encoding": {
       "x": {
         "field": "Year",
@@ -24,7 +24,7 @@
       "y": {"field": "2 yr % Change", "type": "quantitative", "title": "2-Year % Change"},
       "facet": {
         "field": "Country",
-        "columns": 3,
+        "columns": 4,
         "title": null,
         "header": {
           "titleColor": "black",

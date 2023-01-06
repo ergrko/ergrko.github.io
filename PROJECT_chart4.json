@@ -4,15 +4,15 @@
       "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/innVSres_FINAL.csv"
     },
     "title": {
-      "text": "Figure 4; Relationship between R&D expenditure and Research output",
+      "text": "Figure 4; R&D expenditure vs Research output",
       "subtitle": [
-        " { * = 3-year Avg; 2015,2017,2019. ** = per-million-population. }","" , "Source: SJR, World Bank"],
+        "* = 3-year Avg; 2015,2017,2019   ** = per-million-population","" , "Source: SJR, World Bank"],
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 11.2, "fontSize": 14,
-      "anchor": "center",
+      "anchor": "middle",
       "color": "black"
     },
-    "width": 400,"height": 320,
+    "width": 300,"height": 317,
       "config": {
       "padding": {"top": 10, "bottom": 8, "left": 8, "right": 5},
       "background": "white",
@@ -84,9 +84,9 @@
         "mark": {
           "type": "text",
           "color": "forestgreen",
-          "x": 370,
+          "x": 277,
           "align": "right",
-          "y": 20,
+          "y": 30,
           "fontSize": 15,
           "fontWeight": "bold"
         },
