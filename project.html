@@ -65,10 +65,10 @@
         <hr style="color: black; border-style: solid; background-color: black;">
         <h4>Global Innovation; Trends during the last 10 years. </h4>
         <br><p>The <a href="https://www.globalinnovationindex.org/analysis-indicator">'Global Innovation Index'</a> uses various indicators to measure a country's innovation performance. 
-            After downloading then cleaning the data in <a href="https://colab.research.google.com/drive/1sLdkX6TKyFB0r3nvRLfqAfsDcrNoQxM1#scrollTo=O7I5tcEEMrIf">Python</a>, I created a map visualization showing global trends in the index.</p>
+            After downloading then cleaning the data in <a href="https://colab.research.google.com/drive/1sLdkX6TKyFB0r3nvRLfqAfsDcrNoQxM1#scrollTo=O7I5tcEEMrIf">Python</a>, I created a choropleth map showing global trends in the index.</p>
         <br><div class="chart" id="Chart1" ></div>
         <br><br><br>
-        <p>The strongest innovators are primarily in North America, East-Asia and Europe, with Switzerland ranked first. Notable risers were China (44.7 to 55.3), USA, South Korea and Germany, while some previously high-ranked countries saw declines (e.g Canada, Scandinavia).</p>
+        <p>The strongest innovators are primarily in North America, East-Asia and Europe, with Switzerland ranked first. Notable risers were China (44.7 to 55.3), USA and Germany, while some previously high-ranked countries saw declines (e.g Canada, Scandinavia).</p>
         <p>To study the relationship between innovation spending and GII scores, I used <a href="https://colab.research.google.com/drive/1B0hANv_VBIWGIV1Zy2pcorhmyEAljMPi#scrollTo=sgTW_H1YJ7ye">Python</a> to download multiple <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">World Bank</a> API links on R&D expenditure (as % of GDP).</p>
         <br><div class="chart" id="Chart2" ></div>
         <br><br><br><p>Figure 2 shows that R&D expenditure followed GII scores, with those who saw GII rises showing R&D increases (China, USA, Korea), and those who saw GII falls seeing stagnant R&D (Finland, UK). However, for Belgium and Norway, R&D increases corresponded with declining GII scores, thus the relationship between innovation spending and its output requires further analysis.</p>
@@ -87,7 +87,7 @@
         <br><p>To examine the ease of innovation across countries, I used the Economist's <a href="https://www.iberglobal.com/files/business_climate_eiu.pdf">"Business Environment Rankings"</a> and <a href="https://stats.oecd.org/Index.aspx?DataSetCode=VC_INVEST#">OECD data</a> on ‘Venture Capital’ (investments on new ‘high-potential’ businesses). After <a href="https://colab.research.google.com/drive/1DYIuOBryvv_Jx4aJ3Nszx4nGXYg57dGG#scrollTo=GHEWJulJSN-M">scraping and cleaning</a> the Economist's PDF, I created a bar chart showing BER changes for the Top12 at 2018-end.</p>
         <br><div class="chart" id="Chart5" ></div>
         <br><br><br>
-        <p>Singapore and Switzerland’s Top-2 ranks may explain their strong performances in ‘High-Tech’ exports (Figure3) and GII (Figure1), respectively.</p>
+        <p>Singapore and Switzerland’s Top-2 ranks may explain their strong performances in ‘High-Tech’ exports (Figure 3) and GII (Figure 1), respectively.</p>
         <p>Next, I <a href="https://colab.research.google.com/drive/1ha5oVSLy7w3K5CRUtTdu9eGALZG-CGlK#scrollTo=xTtEXFlZRaWP">cleaned</a> the OECD data and calculated the 2-year percentage changes in VC to filter out year-on-year fluctuations. A resulting trellis chart was created, displaying VC trends for 12 countries.</p>
         <br><br>
         <div class="chart" id="Chart6" ></div>
