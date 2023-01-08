@@ -1,78 +1,90 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/BUS_ENV_scrape_cleaned.csv"
-    },
-    "title": {
-      "text": "Figure 5; 'Business Environment Rankings' (BER) - 2010s",
-      "subtitle": [ "Max Index value = 10. Covers two periods; 2009-2013, 2014-2018. " , "", "*Tool-tip includes ranking for that period. Source: The Economist" , ""],
-      "subtitleFontStyle": "italic",
-       "fontSize": 14.5, 
-      "subtitleFontSize": 11.2,
-      "anchor": "middle",
-      "color": "#000000",
-      "subtitleColor": "#000000"
-    },
-    "height": 350,
-    "width": 290,
-    "config": { "padding": { "top": 10}, 
-    "background": "white", 
-    "view": {"stroke": "transparent"}},
-    "repeat": {"layer": ["2009-2013", "2014-2018"]},
-    "spec": {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "Country",
-          "type": "nominal",
-          "title": null,
-          "axis": {
-            "grid": false,
-            "gridColor": "black"
-          }
-        },
-        "x": {
-          "field": {"repeat": "layer"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/BUS_ENV_scrape_cleaned.csv"
+  },
+  "title": {
+    "text": "Figure 5; 'Business Environment Rankings' (BER) - 2010s",
+    "subtitle": [
+      "Max Index value = 10. Covers two periods; 2009-2013, 2014-2018. ",
+      "",
+      "*Tool-tip includes ranking for that period. Source: The Economist",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "fontSize": 14.5,
+    "subtitleFontSize": 11.2,
+    "anchor": "middle",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": 350,
+  "width": 290,
+  "config": {
+    "padding": {"top": 10},
+    "background": "white",
+    "view": {"stroke": "transparent"}
+  },
+  "repeat": {"layer": ["2009-2013", "2014-2018"]},
+  "spec": {
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "Country",
+        "type": "nominal",
+        "title": null,
+        "axis": {"grid": false, "gridColor": "black"}
+      },
+      "x": {
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "scale": {"domain": [7, 9],"clamp":true},
+
+
+        "title": "BER Score",
+        "axis": {
+          "grid": false,
+          "domainColor": "#000000",
+          "labelColor": "#000000",
+          "tickColor": "#000000",
+          "gridColor": "black",
+          "titleColor": "#000000"
+        }
+      },
+      "color": {
+        "datum": {"repeat": "layer"},
+        "title": "Time Period",
+        "scale": {"range": ["#87CEEB", "#4169E1"]},
+        "legend": {
+          "orient": "bottom",
+          "fillColor": "#ffffff",
+          "labelColor": "#000000"
+        }
+      },
+      "yOffset": {"datum": {"repeat": "layer"}},
+      "tooltip": [
+        {"field": "Country", "type": "nominal", "title": "Country"},
+        {
+          "field": "2009-2013",
           "type": "quantitative",
-          "title": "BER Score",
-          "axis": {
-            "grid": false,
-            "domainColor": "#000000",
-            "labelColor": "#000000",
-            "tickColor": "#000000",
-            "gridColor": "black",
-            "titleColor": "#000000"
-          }
+          "title": "BER Score ('09-13)"
         },
-        "color": {
-          "datum": {"repeat": "layer"},
-          "title": "Time Period",
-          "scale": {"range": ["#87CEEB", "#4169E1"]},
-          "legend": {
-            "orient": "bottom",
-            "fillColor": "#ffffff",
-            "labelColor": "#000000"
-          }
+        {
+          "field": "Global Rank (2009-13)",
+          "type": "quantitative",
+          "title": "Global Rank ('09-13)"
         },
-        "yOffset": {"datum": {"repeat": "layer"}},
-        "tooltip": [
-            {"field": "Country", "type": "nominal", "title": "Country"},
-    
-            {"field": "2009-2013",
-              "type": "quantitative",
-              "title": "BER Score ('09-13)"},
-    
-            {"field": "Global Rank (2009-13)",
-              "type": "quantitative",
-              "title": "Global Rank ('09-13)"},
-    
-            {"field": "2014-2018",
-              "type": "quantitative",
-              "title": "BER Score ('14-18)"},
-    
-            {"field": "Global Rank (2014-18)", "type": "quantitative", 
-            "title": "Global Rank ('14-18)"}
-        ]
-      }
+        {
+          "field": "2014-2018",
+          "type": "quantitative",
+          "title": "BER Score ('14-18)"
+        },
+        {
+          "field": "Global Rank (2014-18)",
+          "type": "quantitative",
+          "title": "Global Rank ('14-18)"
+        }
+      ]
     }
   }
+}
