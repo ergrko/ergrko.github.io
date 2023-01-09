@@ -1,85 +1,87 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": " ",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-      "text": "Figure 2; Trends in R&D expenditure since '09",
-      "subtitle": [
-        "As a Percentage of GDP. Tooltip included.  Source: World Bank API",
-        ""
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 11.2,
-      "fontSize": 14,
-      "anchor": "middle",
-      "color": "black"
-    },
-    "height": 320,
-    "width": 300,
-      "config": {
-      "padding": {"top": 10, "bottom": 6, "left": 8, "right": 3},
-      "background": "white"
-    },
-    "data": {
-      "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/RnD_WB2.json"
-    },
-    "mark": "line",
-    "encoding": {
-      "x": {
-        "field": "date",
-        "type": "temporal",
-        "scale": {"domain": ["2009", "2019"]},
-        "title": null,
-        "axis": {
-          "grid": true,
-          "labelAngle": 30,
-          "labelFontSize": 11.2
-        }
-      },
-      "y": {
-        "field": "value",
-        "type": "quantitative",
-        "title": "R&D (% of GDP)",
-  "axis": {"grid": false,"titleFontSize": 14, "labelFontSize": 11,
-          "tickMinStep": 1}
+    "text": "Figure 2; Trends in R&D expenditure since '09",
+    "subtitle": [
+      "As a Percentage of GDP. Tooltip and Drop-down included.  Source: World Bank API",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11.2,
+    "fontSize": 14,
+    "anchor": "middle",
+    "color": "black"
   },
-      "color": {
-          "field": "country.value",
-          "type": "nominal",
-          "legend": {"title": null, "orient":  "right",
-          "symbolSize": 140},
-        "scale": {"scheme": "plasma"}
+  "height": 325,
+  "width": 340,
+  "config": {
+    "padding": {"top": 10, "bottom": 6, "left": 8, "right": 3},
+    "background": "white"
   },
-        "tooltip": [
-            {"field": "country.value", "type": "nominal", "title": "Country"},
-            {"field": "date", "type": "temporal", "title": "Date"},
-            {"field": "value",
-            "type": "quantitative",
-            "title": "R&D (% of GDP)"
-            }
-        ]
-  
-        },
-    "layer": [
-        {"mark": "line"},
-        {
-          "encoding": {
-            "x": {"aggregate": "max", "field": "date"},
-            "y": {"aggregate": {"argmax": "date"},   "field": "Value"}
-        },
-      "layer": [
-          {"mark": {"type": "circle"}},
-        {
-          "mark": {"type": "text", "align": "left"},
-          "encoding": {
-                "text": {
-                  "field": "country.value",
-                  "type": "nominal",
-                  "title": "Country"
-                }
-              }
-            }
-          ]
-        }
-      ]    
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/ergrko/ergrko.github.io/main/RnD_WB2.json"
+  },
+
+  "mark": {"type": "line", "point": {
+    "shape": "square" }},
+  "selection": {
+    "Type": {
+      "type": "single",
+      "fields": ["country.value"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Argentina",
+          "Belgium",
+          "China",
+          "Finland",
+          "Germany",
+          "Korea, Rep.",
+          "Norway",
+          "United Kingdom",
+          "United States"
+        ],
+        "name": "Select Country;"
+      }
+    }
+  },
+  "transform": [{"filter": {"selection": "Type"}}],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "scale": {"domain": ["2009", "2019"]},
+      "title": null,
+      "axis": {"grid": true, "labelAngle": 30, "labelFontSize": 11.2}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "R&D (% of GDP)",
+      "axis": {
+        "grid": false,
+        "titleFontSize": 13,
+        "labelFontSize": 11,
+        "tickMinStep": 0.5,
+        "titlePadding": 10
+      }
+    },
+    "color": {
+      "field": "country.value",
+      "type": "nominal",
+      "title": "Country",
+      "legend": {"title": null, "orient": "right", "symbolSize": 140,"symbolType": "square"},
+      "scale": {"scheme": "plasma"}
+      
+    },
+
+    "tooltip": [
+      {"field": "country.value", "type": "nominal", "title": "Country"},
+      {"field": "date", "type": "temporal", "title": "Date"},
+      {"field": "value", "type": "quantitative", "title": "R&D (% of GDP)"}
+    ]
   }
-  
+
+}
