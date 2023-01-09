@@ -72,7 +72,6 @@
         <p>To study the relationship between innovation spending and GII scores, I used <a href="https://colab.research.google.com/drive/1B0hANv_VBIWGIV1Zy2pcorhmyEAljMPi#scrollTo=sgTW_H1YJ7ye">Python</a> to download multiple <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">World Bank</a> API links on R&D expenditure (as % of GDP).</p>
         <br><div class="chart" id="Chart2" ></div>
         <br><br><br><p>Figure 2 shows that R&D expenditure followed GII scores, with those who saw GII rises showing R&D increases (China, USA, Korea), and those who saw GII falls seeing stagnant R&D (Finland, UK). However, for Belgium and Norway, R&D increases corresponded with declining GII scores, thus the relationship between innovation spending and its output requires further analysis.</p>
-        <br>        
         
         <h4>Assessing the relationship between Innovative Spend and Output</h4>
         <br><p>To account for the lag between R&D expenditure and output, I used <a href="https://colab.research.google.com/drive/1Cqkypr2iuAi2MmNDzIPPwVzngpk3dQtM#scrollTo=XJAonHBQalhS">Python</a> to construct a three-year average of <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">R&D expenditure</a> for each country. First, I merged this statistic with World Bank data on ‘High-Tech’ exports <a href="https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS">in percentages</a> and <a href="https://data.worldbank.org/indicator/TX.VAL.TECH.CD">current US$</a>.</p>
@@ -81,7 +80,6 @@
         <br><br>
         <br><br><p>Figure 3 shows East-Asia outperforming the West, with China and Singapore having higher ‘High-Tech’ export percentages than the US, despite spending less of GDP on R&D.</p>
         <p>Figure 4’s R2 statistic of 0.32 suggests 32% of ‘PPM’ variation was explained by R&D expenditure. Notably, Switzerland’s high ‘PPM’ value and R&D statistic may explain its top GII rankings.</p>
-        <br>
 
         <h4>The Ease of Innovation</h4>
         <br><p>To examine the ease of innovation across countries, I used the Economist's <a href="https://www.iberglobal.com/files/business_climate_eiu.pdf">"Business Environment Rankings"</a> and <a href="https://stats.oecd.org/Index.aspx?DataSetCode=VC_INVEST#">OECD data</a> on ‘Venture Capital’ (investments on new ‘high-potential’ businesses). After <a href="https://colab.research.google.com/drive/1DYIuOBryvv_Jx4aJ3Nszx4nGXYg57dGG#scrollTo=GHEWJulJSN-M">scraping and cleaning</a> the Economist's PDF, I created a bar chart showing BER changes for the Top12 at 2018-end.</p>
@@ -91,9 +89,8 @@
         <p>Next, I <a href="https://colab.research.google.com/drive/1ha5oVSLy7w3K5CRUtTdu9eGALZG-CGlK#scrollTo=xTtEXFlZRaWP">cleaned</a> the OECD data and calculated the 2-year percentage changes in VC to filter out year-on-year fluctuations. A resulting trellis chart was created, displaying VC trends for 12 countries.</p>
         <br><br>
         <div class="chart" id="Chart6" ></div>
-        <br><br>
+        <br><br><br>
         <p>Figures 5-6 illustrate that Countries with thriving BERs showed significant increases in VC (Switzerland, USA), while countries with stagnant BERs saw lower VC growth or declines (Sweden, Finland).</p>
-        <br>
 
         <h4>Going Forward; Considering the 'Talent'</h4>
         <br><p>To assess the talent across countries, I <a href="https://colab.research.google.com/drive/1ZQ_Zle2UZAYEYmxmDUIYSq6Lcyt_IpLh#scrollTo=zl238mXsrzNK">scraped</a> the <a href="https://www.webometrics.info/en/distribution_by_country#content">Webometrics</a> website to create a stacked bar chart showing the number of Top-1000 universities in countries hosting at least one Top-100 university. I also <a href="https://colab.research.google.com/drive/1q4Nk86IMz791xY_NxaFEwiGMIhZbGSzx#scrollTo=pnOhn03fNad5">scraped</a> the ‘Global Entrepreneurship Index’ from <a href="http://thegedi.org/global-entrepreneurship-and-development-index/">GEDI</a>, and regressed it on the percentage of individuals holding master's degrees (<a href="https://data.worldbank.org/indicator/SE.TER.CUAT.MS.ZS?most_recent_value_desc=true">World Bank</a>).</p>
